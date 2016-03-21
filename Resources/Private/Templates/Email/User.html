@@ -1,0 +1,29 @@
+<f:layout name='Default'/>
+<f:section name='main'>
+	<div style='font-family: Arial;'>
+		
+		<f:translate key="LLL:EXT:js_guestbook/Resources/Private/Language/locallang-email.xlf:dear" />
+		<br /><br />
+		
+		<f:format.printf arguments="{
+			1: '<br />'  
+			}">
+			<f:translate key="LLL:EXT:js_guestbook/Resources/Private/Language/locallang-email.xlf:user.message_before_contact_data" /> 
+		</f:format.printf>
+		<br /><br />
+		<f:if condition="{js_guestbook_all}">
+			<f:format.raw>{js_guestbook_all}</f:format.raw>
+		</f:if>
+		<br />
+		<f:format.printf arguments="{
+			1: '<br />'  
+			}">
+			<f:translate key="LLL:EXT:js_guestbook/Resources/Private/Language/locallang-email.xlf:user.message_after_contact_data" /> 
+		</f:format.printf>
+		
+		<br /><br />
+		
+		<strong><f:translate key="LLL:EXT:js_guestbook/Resources/Private/Language/locallang-email.xlf:regards" /></strong>
+		
+	</div>
+</f:section>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-03-17T19:11:09Z" product-name="js_guestbook">
+		<header/>
+		<body>
+			<trans-unit id="tx_jsguestbook_domain_model_guestbook">
+				<source>Guest Book</source>
+			</trans-unit>
+			<trans-unit id="tx_jsguestbook_domain_model_guestbook.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_jsguestbook_domain_model_guestbook.first_name">
+				<source>First Name</source>
+			</trans-unit>
+			<trans-unit id="tx_jsguestbook_domain_model_guestbook.last_name">
+				<source>Last Name</source>
+			</trans-unit>
+			<trans-unit id="tx_jsguestbook_domain_model_guestbook.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_jsguestbook_domain_model_guestbook.email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_jsguestbook_domain_model_guestbook.phone">
+				<source>Phone</source>
+			</trans-unit>
+			<trans-unit id="tx_jsguestbook_domain_model_guestbook.www">
+				<source>Www</source>
+			</trans-unit>
+			<trans-unit id="tx_jsguestbook_domain_model_guestbook.message">
+				<source>Message</source>
+			</trans-unit>
+			<trans-unit id="tx_jsguestbook_domain_model_guestbook.comment">
+				<source>Comment</source>
+			</trans-unit>
+			<trans-unit id="tx_jsguestbook_domain_model_guestbook.creation_date">
+				<source>Creation Date</source>
+			</trans-unit>
+			<trans-unit id="tx_jsguestbook_domain_model_guestbook.receiver_email_subject">
+				<source>Receiver Email Subject</source>
+			</trans-unit>
+			<trans-unit id="tx_jsguestbook_domain_model_guestbook.user_email_subject">
+				<source>User Email Subject</source>
+			</trans-unit>
+			<trans-unit id="tx_jsguestbook_domain_model_guestbook.ip">
+				<source>Ip</source>
+			</trans-unit>
+			<trans-unit id="tx_jsguestbook_domain_model_guestbook.useragent">
+				<source>Useragent</source>
+			</trans-unit>
+			<trans-unit id="tx_jsguestbook_domain_model_guestbook.website_language">
+				<source>Website Language</source>
+			</trans-unit>
+			<trans-unit id="tx_jsguestbook_domain_model_guestbook.website_language_id">
+				<source>Website Language Id</source>
+			</trans-unit>
+			<trans-unit id="label.first_name">
+				<source>First Name</source>
+			</trans-unit>
+			<trans-unit id="label.last_name">
+				<source>Last Name</source>
+			</trans-unit>
+			<trans-unit id="label.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="label.email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="label.phone">
+				<source>Phone</source>
+			</trans-unit>
+			<trans-unit id="label.www">
+				<source>URL</source>
+			</trans-unit>
+			<trans-unit id="label.message">
+				<source>Message</source>
+			</trans-unit>
+			<trans-unit id="label.save">
+				<source>Save</source>
+			</trans-unit>
+			<trans-unit id="required.field.alert">
+				<source>Please fill all required fields.</source>
+			</trans-unit>
+			<trans-unit id="message.error.blank_first_name">
+				<source>First name cannot be blank</source>
+			</trans-unit>
+			<trans-unit id="message.error.blank_last_name">
+				<source>Last name cannot be blank</source>
+			</trans-unit>
+			<trans-unit id="message.error.blank_title">
+				<source>Title cannot be blank</source>
+			</trans-unit>
+			<trans-unit id="message.error.blank_email">
+				<source>Email address cannot be blank</source>
+			</trans-unit>
+			<trans-unit id="message.error.valid_email">
+				<source>Please enter valid email</source>
+			</trans-unit>
+			<trans-unit id="message.error.blank_phone">
+				<source>Phone cannot be blank</source>
+			</trans-unit>
+			<trans-unit id="message.error.valid_phone">
+				<source>Please enter valid Phone</source>
+			</trans-unit>
+			<trans-unit id="message.error.blank_www">
+				<source>URL cannot be blank</source>
+			</trans-unit>
+			<trans-unit id="message.error.valid_www">
+				<source>Please enter valid URL</source>
+			</trans-unit>
+			<trans-unit id="message.error.blank_message">
+				<source>Message cannot be blank</source>
+			</trans-unit>
+			<trans-unit id="message.error.blank_captcha">
+				<source>Please enter result here</source>
+			</trans-unit>
+			<trans-unit id="message.error.valid_captcha">
+				<source>Wrong captcha code entered</source>
+			</trans-unit>
+			<trans-unit id="error">
+				<source>Something missing while configuration</source>
+			</trans-unit>
+			<trans-unit id="message.error.include_template">
+				<source>Are you sure that you have included the "Main" static template?</source>
+			</trans-unit>
+			<trans-unit id="message.error.receiver.missing_configuration">
+				<source>Email configuration for receiver is missing.</source>
+			</trans-unit>
+			<trans-unit id="message.error.user.missing_configuration">
+				<source>Email configuration for user is missing.</source>
+			</trans-unit>
+			<trans-unit id="message.error.missing_configuration">
+				<source>Something missing while configuration</source>
+			</trans-unit>
+			<trans-unit id="message.error.missing_field_configuration">
+				<source>You have to set atleast one field in the plugin option.</source>
+			</trans-unit>
+			<trans-unit id="message.error.">
+				<source>We kindly request you again to contact us.</source>
+			</trans-unit>
+			<trans-unit id="message.error.data_not_inserted">
+				<source>We kindly request you again to contact us.</source>
+			</trans-unit>
+			<trans-unit id="message.success.successfully_contacted">
+				<source> Thanks you for your response. We will get back to you as soon as possible.</source>
+			</trans-unit>
+			<trans-unit id="message.info.mail_not_sent">
+				<source>Thanks you for your response. %1$s Unfortunately your mail is not sent, Don't worry we will get back to you as soon as possible.</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

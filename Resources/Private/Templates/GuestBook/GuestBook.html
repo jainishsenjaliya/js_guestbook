@@ -1,0 +1,32 @@
+<f:layout name='Default'/>
+
+<f:section name='main'>
+
+	<div class="formLoading"></div>	
+
+	<f:if condition="{template}==1">
+
+		<f:then>
+
+			<f:render partial="Message/Message" arguments="{message:message,settings:settings}" />
+
+			<f:form action="guestBook" class="form-horizontal" id="js-contact-form-{settings.contentID}" enctype="multipart/form-data" onsubmit="return guestBookValidate(this.id);">
+
+				<f:form.hidden name="content" value="{settings.contentID}" />
+				<input type="hidden" class="alert" value="<f:translate key='required.field.alert' />"  />
+
+				<f:render partial="Template/Template" arguments="{formFields:formFields}" />
+
+			</f:form>	
+
+		</f:then>
+
+		<f:else>
+			
+			<f:render partial="Message/Error/Message" arguments="{messages:template}" />
+
+		</f:else>
+
+	</f:if>
+
+</f:section>

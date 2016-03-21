@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-03-17T19:11:09Z" product-name="js_guestbook">
+		<header/>
+		<body>
+			<trans-unit id="name.description">
+				<source>name</source>
+			</trans-unit>
+			<trans-unit id="first_name.description">
+				<source>firstName</source>
+			</trans-unit>
+			<trans-unit id="last_name.description">
+				<source>lastName</source>
+			</trans-unit>
+			<trans-unit id="title.description">
+				<source>title</source>
+			</trans-unit>
+			<trans-unit id="email.description">
+				<source>email</source>
+			</trans-unit>
+			<trans-unit id="phone.description">
+				<source>phone</source>
+			</trans-unit>
+			<trans-unit id="www.description">
+				<source>www</source>
+			</trans-unit>
+			<trans-unit id="message.description">
+				<source>message</source>
+			</trans-unit>
+			<trans-unit id="comment.description">
+				<source>comment</source>
+			</trans-unit>
+			<trans-unit id="creation_date.description">
+				<source>creationDate</source>
+			</trans-unit>
+			<trans-unit id="receiver_email_subject.description">
+				<source>receiverEmailSubject</source>
+			</trans-unit>
+			<trans-unit id="user_email_subject.description">
+				<source>userEmailSubject</source>
+			</trans-unit>
+			<trans-unit id="ip.description">
+				<source>ip</source>
+			</trans-unit>
+			<trans-unit id="useragent.description">
+				<source>useragent</source>
+			</trans-unit>
+			<trans-unit id="website_language.description">
+				<source>websiteLanguage</source>
+			</trans-unit>
+			<trans-unit id="website_language_id.description">
+				<source>websiteLanguageId</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

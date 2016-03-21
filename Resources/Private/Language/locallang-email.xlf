@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-03-17T12:53:22Z" product-name="js_guestbook">
+		<header/>
+		<body>
+			<trans-unit id="dear">
+				<source>Dear Mr / Mrs</source>
+			</trans-unit>
+			<trans-unit id="user.message_before_contact_data">
+				<source>Thank you for your request!</source>
+			</trans-unit>
+			<trans-unit id="user.message_after_contact_data">
+				<source>If you have any questions about our services, please contact us at any time.</source>
+			</trans-unit>
+			<trans-unit id="admin.message_before_contact_data">
+				<source>The following person has filled out the guest book form under {current_page}:</source>
+			</trans-unit>
+			<trans-unit id="admin.message_after_contact_data">
+				<source></source>
+			</trans-unit>
+			<trans-unit id="regards">
+				<source>Best regards,</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

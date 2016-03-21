@@ -1,0 +1,17 @@
+
+plugin.tx_jsguestbook_guestbook {
+	view {
+		# cat=plugin.tx_jsguestbook_guestbook/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:js_guestbook/Resources/Private/Templates/
+		# cat=plugin.tx_jsguestbook_guestbook/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:js_guestbook/Resources/Private/Partials/
+		# cat=plugin.tx_jsguestbook_guestbook/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:js_guestbook/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_jsguestbook_guestbook//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}
+
+## EXTENSION BUILDER DEFAULTS END TOKEN - Everything BEFORE this line is overwritten with the defaults of the extension builder

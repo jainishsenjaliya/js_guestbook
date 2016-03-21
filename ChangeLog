@@ -1,0 +1,7 @@
+2016-03-17  Jainish Senjaliya, <jainishsenjaliya@gmail.com>
+
+	* Simple and Smart Guest book Frontend plugin.
+	* Manage form field option via typoscript
+	* User and receiver email configuration also manage via typoscript
+	* All dynamic function will manage through typoscript.
+	* Released version 1.0.0

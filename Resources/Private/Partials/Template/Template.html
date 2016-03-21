@@ -1,0 +1,14 @@
+<f:for each="{formFields}" as="fields"  iteration="itemIteration">
+
+	<f:if condition="{fields.type}">
+		<f:then>
+			<f:render partial="Form/{fields.type}" arguments="{fields:fields}" />
+		</f:then>
+		<f:else>
+			<f:render partial="Form/Input" arguments="{fields:fields}" />
+		</f:else>
+	</f:if>
+
+</f:for>
+
+<f:render partial="Form/Submit" />

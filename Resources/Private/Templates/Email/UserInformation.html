@@ -1,0 +1,26 @@
+<f:layout name='Default'/>
+<f:section name='main'>
+	<f:if condition="{mail -> f:count()} > 0">
+		<table>
+			<f:for each="{mail}" as="data" key="fields" iteration="itemIteration">
+				<tr>
+					<td><strong><f:translate key="LLL:EXT:js_guestbook/Resources/Private/Language/locallang.xlf:label.{fields}" /></strong></td>
+					<td>:<f:if condition="{data.type}">
+							<f:then>
+								<f:if condition="{data.type}=='Input'">
+									{data.value}
+								</f:if>
+								<f:if condition="{data.type}=='Textarea'">
+									<f:format.html>{data.value}</f:format.html>
+								</f:if>
+							</f:then>
+							<f:else>
+								{data.value}
+							</f:else>
+						</f:if>
+					</td>
+				</tr>
+			</f:for>
+		</table>
+	</f:if>
+</f:section>

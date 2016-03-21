@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-03-17T19:11:09Z" product-name="js_guestbook">
+		<header/>
+		<body>
+			<trans-unit id="tx_jsguestbook_domain_model_guestbook">
+				<source>Guest Book</source>
+			</trans-unit>
+			<trans-unit id="tx_jsguestbook_domain_model_guestbook.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_jsguestbook_domain_model_guestbook.first_name">
+				<source>First Name</source>
+			</trans-unit>
+			<trans-unit id="tx_jsguestbook_domain_model_guestbook.last_name">
+				<source>Last Name</source>
+			</trans-unit>
+			<trans-unit id="tx_jsguestbook_domain_model_guestbook.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_jsguestbook_domain_model_guestbook.email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_jsguestbook_domain_model_guestbook.phone">
+				<source>Phone</source>
+			</trans-unit>
+			<trans-unit id="tx_jsguestbook_domain_model_guestbook.www">
+				<source>Www</source>
+			</trans-unit>
+			<trans-unit id="tx_jsguestbook_domain_model_guestbook.message">
+				<source>Message</source>
+			</trans-unit>
+			<trans-unit id="tx_jsguestbook_domain_model_guestbook.comment">
+				<source>Comment</source>
+			</trans-unit>
+			<trans-unit id="tx_jsguestbook_domain_model_guestbook.creation_date">
+				<source>Creation Date</source>
+			</trans-unit>
+			<trans-unit id="tx_jsguestbook_domain_model_guestbook.receiver_email_subject">
+				<source>Receiver Email Subject</source>
+			</trans-unit>
+			<trans-unit id="tx_jsguestbook_domain_model_guestbook.user_email_subject">
+				<source>User Email Subject</source>
+			</trans-unit>
+			<trans-unit id="tx_jsguestbook_domain_model_guestbook.ip">
+				<source>Ip</source>
+			</trans-unit>
+			<trans-unit id="tx_jsguestbook_domain_model_guestbook.useragent">
+				<source>Useragent</source>
+			</trans-unit>
+			<trans-unit id="tx_jsguestbook_domain_model_guestbook.website_language">
+				<source>Website Language</source>
+			</trans-unit>
+			<trans-unit id="tx_jsguestbook_domain_model_guestbook.website_language_id">
+				<source>Website Language Id</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
