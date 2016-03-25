@@ -430,6 +430,8 @@ class GuestBookService implements \TYPO3\CMS\Core\SingletonInterface {
 
 		$settings = SettingsService::getSettings();
 
+		$language = isset($GLOBALS['TSFE']->config['config']['language'])?$GLOBALS['TSFE']->config['config']['language']:'';
+
 		$marketingInfo = array(
 			
 				'pid' 				=> $settings['main']['storagePID']==""?$GLOBALS['TSFE']->id:$settings['main']['storagePID'],
@@ -442,7 +444,7 @@ class GuestBookService implements \TYPO3\CMS\Core\SingletonInterface {
 				
 				'ip'					=> Configuration::geIPAddress(),
 				'useragent'	 			=> GeneralUtility::getIndpEnv('HTTP_USER_AGENT'),
-				'website_language'		=> $GLOBALS['TSFE']->config['config']['language'],
+				'website_language'		=> $language,
 				'website_language_id'	=> $GLOBALS['TSFE']->sys_language_uid,
 			);
 

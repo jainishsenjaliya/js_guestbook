@@ -77,6 +77,12 @@ class Configuration implements \TYPO3\CMS\Core\SingletonInterface {
 			}
 		}
 
+		if(in_array('guestBook', self::dataExplode($settings['main']['displayMode']))){
+			if($settings['main']['startingPoint']==""){
+				return array("error"=>'missing_startingPoint');
+			}
+		}
+
 		if (trim($settings['fields']['form']) == '') {
 			return array("error"=>'missing_field_configuration');
 		}

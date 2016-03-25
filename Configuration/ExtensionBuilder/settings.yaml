@@ -1,6 +1,6 @@
 #
 # Extension Builder settings for extension js_guestbook
-# generated 2016-03-17T12:37:00Z
+# generated 2016-03-25T12:37:00Z
 #
 # See http://www.yaml.org/spec/1.2/spec.html
 #
@@ -62,7 +62,7 @@ overwriteSettings:
   ext_tables.sql: merge
 
 ## use static date attribute in xliff files ##
-#staticDateInXliffFiles: 2016-03-17T12:37:00Z
+#staticDateInXliffFiles: 2016-03-25T12:37:00Z
 
 ## list of error codes for warnings that should be ignored ##
 #ignoreWarnings:

@@ -1,3 +1,9 @@
+2016-03-25  Jainish Senjaliya, <jainishsenjaliya@gmail.com>
+
+	* Added option in plugin for display guest book form and guestbook list
+	* Added starting point and storage folder option in plugin
+	* Released version 1.0.1
+
 2016-03-17  Jainish Senjaliya, <jainishsenjaliya@gmail.com>
 
 	* Simple and Smart Guest book Frontend plugin.

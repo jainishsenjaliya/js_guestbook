@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2016-03-17T19:11:09Z" product-name="js_guestbook">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-03-25T19:11:09Z" product-name="js_guestbook">
 		<header/>
 		<body>
 			<trans-unit id="tx_jsguestbook_domain_model_guestbook">
@@ -54,6 +54,11 @@
 			<trans-unit id="tx_jsguestbook_domain_model_guestbook.website_language_id">
 				<source>Website Language Id</source>
 			</trans-unit>
+
+			<trans-unit id="label.guestbook_form">
+				<source>Guest Book Form</source>
+			</trans-unit>
+			
 			<trans-unit id="label.first_name">
 				<source>First Name</source>
 			</trans-unit>
@@ -77,6 +82,9 @@
 			</trans-unit>
 			<trans-unit id="label.save">
 				<source>Save</source>
+			</trans-unit>
+			<trans-unit id="label.comment.header">
+				<source>Comment from webmaster</source>
 			</trans-unit>
 			<trans-unit id="required.field.alert">
 				<source>Please fill all required fields.</source>
@@ -134,6 +142,9 @@
 			</trans-unit>
 			<trans-unit id="message.error.missing_field_configuration">
 				<source>You have to set atleast one field in the plugin option.</source>
+			</trans-unit>
+			<trans-unit id="message.error.missing_startingPoint">
+				<source>Please set starting point in plugin configuration.</source>
 			</trans-unit>
 			<trans-unit id="message.error.">
 				<source>We kindly request you again to contact us.</source>

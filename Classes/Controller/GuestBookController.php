@@ -189,9 +189,12 @@ class GuestBookController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContro
 			}
 		}
 
+		$guestBook = array();
 
-		if ($template == 1) {
-			
+		if(in_array('guestBook', GeneralUtility::trimExplode(',', $this->settings['main']['displayMode'], true))){
+			if($this->settings['main']['startingPoint']!=""){
+				$guestBook = $this->guestBookRepository->guestBook();
+			}
 		}
 
 		$assignedValues = array(
@@ -199,6 +202,7 @@ class GuestBookController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContro
 			'settings'		=> $this->settings,
 			'formFields'	=> $formFields,
 			'template'		=> $template,
+			'guestBook'		=> $guestBook,
 		);
 
 		$this->view->assignMultiple($assignedValues);

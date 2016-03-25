@@ -209,18 +209,18 @@
         "backendModules": [
 
         ],
-        "description": "Simple Guest book with name, email, phone, www,  title, message",
+        "description": "Simple and smart Guestbook with name, email, phone, www, title, message",
         "emConf": {
             "category": "plugin",
             "custom_category": "",
-            "dependsOn": "typo3 =>  6.0.0 - 7.6.4\njs_paginate => 1.0.3 - 1.0.5",
+            "dependsOn": "typo3 =>  6.0.0 - 7.6.4\njs_paginate =>  1.0.3 - 2.0.0",
             "disableLocalization": false,
             "disableVersioning": false,
             "skipGenerateDocumentationTemplate": false,
             "sourceLanguage": "en",
             "state": "stable",
             "targetVersion": "7.6.0-7.6.99",
-            "version": "1.0.0"
+            "version": "1.0.1"
         },
         "extensionKey": "js_guestbook",
         "name": "Guest Book",
@@ -251,7 +251,7 @@
 
     ],
     "log": {
-        "last_modified": "2016-03-17 07:11",
+        "last_modified": "2016-03-25 07:11",
         "extension_builder_version": "7.6.0",
         "be_user": " (1)"
     }

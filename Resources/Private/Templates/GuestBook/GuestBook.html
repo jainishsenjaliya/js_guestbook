@@ -1,3 +1,5 @@
+{namespace vh=JS\JsGuestbook\ViewHelpers}
+
 <f:layout name='Default'/>
 
 <f:section name='main'>
@@ -10,14 +12,11 @@
 
 			<f:render partial="Message/Message" arguments="{message:message,settings:settings}" />
 
-			<f:form action="guestBook" class="form-horizontal" id="js-contact-form-{settings.contentID}" enctype="multipart/form-data" onsubmit="return guestBookValidate(this.id);">
+			<f:for each="{vh:String.Explode(string: '{settings.main.displayMode}')}" as="fieldType">
 
-				<f:form.hidden name="content" value="{settings.contentID}" />
-				<input type="hidden" class="alert" value="<f:translate key='required.field.alert' />"  />
+				<f:render partial="Template/{vh:String.Upper(string:fieldType)}" arguments="{_all}" />
 
-				<f:render partial="Template/Template" arguments="{formFields:formFields}" />
-
-			</f:form>	
+			</f:for>
 
 		</f:then>
 

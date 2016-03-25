@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2016-03-17T19:11:09Z" product-name="js_guestbook">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-03-25T19:11:09Z" product-name="js_guestbook">
 		<header/>
 		<body>
 			<trans-unit id="tx_jsguestbook_domain_model_guestbook">

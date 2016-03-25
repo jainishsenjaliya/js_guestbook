@@ -1,6 +1,8 @@
 <?php
 namespace JS\JsGuestbook\Domain\Repository;
 
+use JS\JsGuestbook\Service\SettingsService;
+
 /***************************************************************
  *
  *  Copyright notice
@@ -44,4 +46,37 @@ class GuestBookRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
 		return $GLOBALS['TYPO3_DB']->exec_insertQuery('tx_jsguestbook_domain_model_guestbook', $insertArray);
 	}
 
+	/**
+	 * guestBook
+	 *
+	 * @param $insertArray
+	 * @return
+	 */
+	public function guestBook($insertArray)
+	{
+		$settings = SettingsService::getSettings();
+
+		$field = '*';
+		
+		$table = 'tx_jsguestbook_domain_model_guestbook';
+
+		$groupBy = '';
+		
+		$where = '';
+		
+		if (isset($settings['main']['startingPoint']) && $settings['main']['startingPoint'] != '') {
+
+			$storagePids = $settings['main']['startingPoint'];
+
+			$where .= ' AND pid in (' . $storagePids. ') ';
+		}
+
+		$orderBy = 'uid desc';
+
+		$currentTime = time();
+		
+		$where = ' deleted = 0 AND hidden = 0 ' . $where;
+
+		return $GLOBALS['TYPO3_DB']->exec_SELECTgetRows($field, $table, $where, $groupBy, $orderBy, $limit);
+	}
 }

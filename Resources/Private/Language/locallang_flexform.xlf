@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-03-25T19:11:09Z" product-name="js_guestbook">
+		<header/>
+		<body>
+						
+			<trans-unit id="main">
+				<source>General Settings</source>
+			</trans-unit>
+
+			<trans-unit id="main.displayMode">
+				<source>Display mode</source>
+			</trans-unit>
+			<trans-unit id="main.displayMode.guestBook">
+				<source>Guest book List</source>
+			</trans-unit>
+			<trans-unit id="main.displayMode.form">
+				<source>Guestbook Data entry form</source>
+			</trans-unit>
+
+			<trans-unit id="main.storagePID">
+				<source>Where to save user contact [ Empty = Same page ]</source>
+			</trans-unit>
+
+			<trans-unit id="main.startingPoint">
+				<source>Starting Point</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

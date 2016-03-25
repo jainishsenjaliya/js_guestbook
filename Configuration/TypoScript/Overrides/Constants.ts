@@ -31,7 +31,7 @@ plugin.tx_jsguestbook{
 				# cat=jsguestbook_receiver//0140; type=text; label= Receiver Sender Name: Sender Name for mail to receiver overwrites flexform settings (e.g. Sender Name) : if blank or {first_name} then it will take it from user name
 				name		= {first_name}
 
-				# cat=jsguestbook_receiver//0150; type=text; label= Receiver Sender Email: Sender Email for mail to receiver overwrites flexform settings (e.g. Sender Name) : if blank or {email} then it will take it from user email
+				# cat=jsguestbook_receiver//0150; type=text; label= Receiver Sender Email: Sender Email for mail to receiver overwrites flexform settings (e.g. sender@mail.com ) : if blank or {email} then it will take it from user email
 				email		= {email}
 			}
 			noreply {
@@ -65,7 +65,7 @@ plugin.tx_jsguestbook{
 				# cat=jsguestbook_user//0320; type=text; label= User Sender Name: Sender Name for mail to User overwrites flexform settings (e.g. Sender Name)
 				name		= 
 
-				# cat=jsguestbook_user//0330; type=text; label= User Sender Email: Sender Email for mail to User overwrites flexform settings (e.g. Sender Name)
+				# cat=jsguestbook_user//0330; type=text; label= User Sender Email: Sender Email for mail to User overwrites flexform settings (e.g. sender@mail.com)
 				email		= 
 			}
 			noreply {
