@@ -156,7 +156,7 @@ class GuestBookController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContro
 										'user_email_sent' => $userMailSent, 'receiver_email_sent' => $receiverMailSent,
 									 );
 
-					$marketingInformation = GuestBookService::marketingInformation($userInformation, $mailBody);
+					$marketingInformation = GuestBookService::marketingInformation($this->settings, $userInformation, $mailBody);
 
 					$insertArray = array_merge($userInformation, $marketingInformation);
 

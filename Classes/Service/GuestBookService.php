@@ -412,7 +412,7 @@ class GuestBookService implements \TYPO3\CMS\Core\SingletonInterface {
 		if ($to != '') {
 
 			$toArr = array(0 => array('name' => $settings['receiver']['name'], 'email' => $to));
-			$sentMail = Email::sendMail($toArr, $subject, $emailBodyAdmin, $plain, $fromEmail, $fromName, $replyToEmail, $replyToName, $ccName, $ccEmail, $bccName, $bccEmail, $returnPath, $attachements);
+			$sentMail = Email::sendMail($toArr, $subject, $mailContent, $plain, $fromEmail,  $fromName, $replyToEmail, $replyToName, $ccName, $ccEmail, $bccName, $bccEmail, $returnPath, $attachements);
 		}
 
 		return $sentMail;
@@ -421,14 +421,13 @@ class GuestBookService implements \TYPO3\CMS\Core\SingletonInterface {
 	/**
 	 * marketingInformation
 	 *
+	 * @param $settings
 	 * @param $userInformation
 	 * @param $mailBody
 	 * @return
 	 */
 	
-	function marketingInformation($userInformation, $mailBody){
-
-		$settings = SettingsService::getSettings();
+	function marketingInformation($settings, $userInformation, $mailBody){
 
 		$language = isset($GLOBALS['TSFE']->config['config']['language'])?$GLOBALS['TSFE']->config['config']['language']:'';
 

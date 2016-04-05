@@ -1,27 +1,33 @@
-<f:for each="{guestBook}" as="guest"  iteration="itemIteration">
-	<div class="tx-js-guestbook-list">
-		<div class="name">
-			{guest.first_name} {guest.last_name}
-			<br />
-			<small><f:format.date format="d.m.Y - H:i:s">@{guest.creation_date}</f:format.date></small>
-		</div>
-		<f:if condition="{0: guest.email, 1: guest.www}!={0: '', 1: ''}">
-			<div class="contact">
-				<f:if condition="{guest.email}">
-					<f:link.email email="{guest.email}">{guest.email}</f:link.email>
-					<f:if condition="{guest.www}"><br/></f:if>
-				</f:if>
-				<f:if condition="{guest.www}">
-					<f:link.external uri="{guest.www}" target="_blank" rel="nofollow">{guest.www}</f:link.external>
-				</f:if>
+{namespace pg=JS\JsPaginate\ViewHelpers}
+
+<pg:Paginate objects="{guestBook}" as="paginatedObject" configuration="{itemsPerPage: 10, insertAbove: 0, insertBelow: 1, maximumVisiblePages: 5}">
+
+	<f:for each="{paginatedObject}" as="guest"  iteration="itemIteration">
+		<div class="tx-js-guestbook-list">
+			<div class="name">
+				{guest.first_name} {guest.last_name}
+				<br />
+				<small><f:format.date format="d.m.Y - H:i:s">@{guest.creation_date}</f:format.date></small>
 			</div>
-		</f:if>
-		<div class="message"><f:format.nl2br>{guest.message}</f:format.nl2br></div>
-		<f:comment>
-			<f:if condition="{guest.comment}">
-				<div class="comment-header"><f:translate key='label.comment.header' /></div>
-				<div class="comment"><f:format.nl2br>{guest.comment}</f:format.nl2br></div>
+			<f:if condition="{0: guest.email, 1: guest.www}!={0: '', 1: ''}">
+				<div class="contact">
+					<f:if condition="{guest.email}">
+						<f:link.email email="{guest.email}">{guest.email}</f:link.email>
+						<f:if condition="{guest.www}"><br/></f:if>
+					</f:if>
+					<f:if condition="{guest.www}">
+						<f:link.external uri="{guest.www}" target="_blank" rel="nofollow">{guest.www}</f:link.external>
+					</f:if>
+				</div>
 			</f:if>
-		</f:comment>
-	</div>
-</f:for>
+			<div class="message"><f:format.nl2br>{guest.message}</f:format.nl2br></div>
+			<f:comment>
+				<f:if condition="{guest.comment}">
+					<div class="comment-header"><f:translate key='label.comment.header' /></div>
+					<div class="comment"><f:format.nl2br>{guest.comment}</f:format.nl2br></div>
+				</f:if>
+			</f:comment>
+		</div>
+	</f:for>
+
+</pg:Paginate>

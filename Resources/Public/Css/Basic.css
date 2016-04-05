@@ -170,3 +170,30 @@
 .tx-js-guestbook .alert-info span {
 	color: #3079ed;
 }
+
+.tx-js-guestbook .tx-js-guestbook-list{
+	padding: 10px 0;
+	width: 100%;
+	clear: both;
+	background: none repeat scroll 0 0 #fff;
+	border-bottom:1px solid #ddd;
+	padding: 2%;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.tx-js-guestbook .tx-js-guestbook-list:last-child{
+	border-bottom:none;
+}
+
+.tx-js-guestbook .tx-js-guestbook-list a{
+	color: #4d90fe;
+}
+
+.tx-js-guestbook .tx-js-guestbook-list .name{
+	font-weight: bold;
+}
+
+.tx-js-guestbook .tx-js-guestbook-list .contact{
+	margin-bottom: 10px;
+}

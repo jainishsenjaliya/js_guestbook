@@ -128,7 +128,7 @@ class Email {
 		}
 		 
 		// Attachements
-		if (count($attachements)>0) {
+		if (count($attachements)>0 && is_array($attachements)) {
 			foreach ($attachements as $file => $name) {
 				if (file_exists($file)) {
 					if (trim($name)) {
