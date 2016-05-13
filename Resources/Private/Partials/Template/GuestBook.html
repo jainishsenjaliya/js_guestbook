@@ -1,6 +1,6 @@
 {namespace pg=JS\JsPaginate\ViewHelpers}
 
-<pg:Paginate objects="{guestBook}" as="paginatedObject" configuration="{itemsPerPage: 10, insertAbove: 0, insertBelow: 1, maximumVisiblePages: 5, displayDots:0}">
+<pg:Paginate objects="{guestBook}" as="paginatedObject" configuration="{itemsPerPage: 10, insertAbove: 0, insertBelow: 1, maximumVisiblePages: 5, displayDots:1}">
 
 	<f:for each="{paginatedObject}" as="guest"  iteration="itemIteration">
 		<div class="tx-js-guestbook-list">
