@@ -26,6 +26,17 @@
 				<source>Starting Point</source>
 			</trans-unit>
 
+
+			<trans-unit id="fields">
+				<source>Form Fields</source>
+			</trans-unit>
+			<trans-unit id="fields.form">
+				<source>Selected fields will be reflected in frontend side.</source>
+			</trans-unit>
+			<trans-unit id="fields.required">
+				<source>Required fields</source>
+			</trans-unit>
+
 		</body>
 	</file>
 </xliff>

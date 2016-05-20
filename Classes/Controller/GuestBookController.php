@@ -218,13 +218,14 @@ class GuestBookController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContro
 	 * @param $additionalParams
 	 * @return
 	 */
-	public function redirectURL($pageUid = '', $additionalParams = array())
+	public function redirectURL($pageUid = "",$additionalParams = array())
 	{
-		$pageUid = $pageUid > 0 ? $pageUid : $GLOBALS['TSFE']->id;
-		$baseUri = $this->request->getBaseUri();
-		$url = $this->uriBuilder->reset()->setTargetPageUid($pageUid)->setArguments($additionalParams)->buildFrontendUri();
-		header('Location:' . $url);
-		die;
+		$pageUid	= $pageUid !=""?$pageUid:$GLOBALS['TSFE']->id;
+		$baseUri	= $this->request->getBaseUri();
+		$url 		= $this->uriBuilder->reset()->setTargetPageUid($pageUid)->setArguments($additionalParams)->buildFrontendUri();
+		
+		$url = $pageUid>0?$baseUri.$url:$url;
+				
+		header('Location:' . $url); die;
 	}
-
 }

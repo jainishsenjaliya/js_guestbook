@@ -21,7 +21,7 @@ plugin.tx_jsguestbook{
 			# cat=jsguestbook_receiver/file; type=string; label= Default Email Template Path :  (e.g. "Email/Receiver.html" this path will be EXT:js_guestbook/Resources/Private/Templates/Email/Receiver.html ) 
 			emailTemplate	= Email/Receiver.html
 
-			# cat=jsguestbook_receiver//0120; type=text; label= Receiver Email: Receiver Name overwrites flexform settings (e.g. Receiver Name)
+			# cat=jsguestbook_receiver//0120; type=text; label= Receiver Name: Receiver Name overwrites flexform settings (e.g. Receiver Name)
 			name		= 
 
 			# cat=jsguestbook_receiver//0130; type=text; label= Receiver Email: Email of the receivers overwrites flexform settings (e.g. receiver@mail.com)

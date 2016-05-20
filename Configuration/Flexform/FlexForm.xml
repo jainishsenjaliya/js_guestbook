@@ -70,5 +70,98 @@
 				</el>
 			</ROOT>
 		</main>
+		<fields>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:js_guestbook/Resources/Private/Language/locallang_flexform.xlf:fields</sheetTitle>
+					<cshFile>LLL:EXT:js_guestbook/Resources/Private/Language/locallang_csh_flexform.xml</cshFile>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<settings.fields.form>
+						<TCEforms>
+							<label>LLL:EXT:js_guestbook/Resources/Private/Language/locallang_flexform.xlf:fields.form</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:js_guestbook/Resources/Private/Language/locallang.xlf:label.first_name</numIndex>
+										<numIndex index="1">first_name</numIndex>
+									</numIndex>
+									<numIndex index="4" type="array">
+										<numIndex index="0">LLL:EXT:js_guestbook/Resources/Private/Language/locallang.xlf:label.last_name</numIndex>
+										<numIndex index="1">last_name</numIndex>
+									</numIndex>
+									<numIndex index="5" type="array">
+										<numIndex index="0">LLL:EXT:js_guestbook/Resources/Private/Language/locallang.xlf:label.title</numIndex>
+										<numIndex index="1">title</numIndex>
+									</numIndex>
+									<numIndex index="7" type="array">
+										<numIndex index="0">LLL:EXT:js_guestbook/Resources/Private/Language/locallang.xlf:label.email</numIndex>
+										<numIndex index="1">email</numIndex>
+									</numIndex>
+									<numIndex index="8" type="array">
+										<numIndex index="0">LLL:EXT:js_guestbook/Resources/Private/Language/locallang.xlf:label.phone</numIndex>
+										<numIndex index="1">phone</numIndex>
+									</numIndex>
+									<numIndex index="11" type="array">
+										<numIndex index="0">LLL:EXT:js_guestbook/Resources/Private/Language/locallang.xlf:label.www</numIndex>
+										<numIndex index="1">www</numIndex>
+									</numIndex>
+									<numIndex index="22" type="array">
+										<numIndex index="0">LLL:EXT:js_guestbook/Resources/Private/Language/locallang.xlf:label.message</numIndex>
+										<numIndex index="1">message</numIndex>
+									</numIndex>
+								</items>
+								<size>11</size>
+								<default>first_name, email, phone, message</default>
+								<maxitems>25</maxitems>
+							</config>
+						</TCEforms>
+					</settings.fields.form>
+					<settings.fields.required>
+						<TCEforms>
+							<label>LLL:EXT:js_guestbook/Resources/Private/Language/locallang_flexform.xlf:fields.required</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:js_guestbook/Resources/Private/Language/locallang.xlf:label.first_name</numIndex>
+										<numIndex index="1">first_name</numIndex>
+									</numIndex>
+									<numIndex index="4" type="array">
+										<numIndex index="0">LLL:EXT:js_guestbook/Resources/Private/Language/locallang.xlf:label.last_name</numIndex>
+										<numIndex index="1">last_name</numIndex>
+									</numIndex>
+									<numIndex index="5" type="array">
+										<numIndex index="0">LLL:EXT:js_guestbook/Resources/Private/Language/locallang.xlf:label.title</numIndex>
+										<numIndex index="1">title</numIndex>
+									</numIndex>
+									<numIndex index="7" type="array">
+										<numIndex index="0">LLL:EXT:js_guestbook/Resources/Private/Language/locallang.xlf:label.email</numIndex>
+										<numIndex index="1">email</numIndex>
+									</numIndex>
+									<numIndex index="8" type="array">
+										<numIndex index="0">LLL:EXT:js_guestbook/Resources/Private/Language/locallang.xlf:label.phone</numIndex>
+										<numIndex index="1">phone</numIndex>
+									</numIndex>
+									<numIndex index="11" type="array">
+										<numIndex index="0">LLL:EXT:js_guestbook/Resources/Private/Language/locallang.xlf:label.www</numIndex>
+										<numIndex index="1">www</numIndex>
+									</numIndex>
+									<numIndex index="22" type="array">
+										<numIndex index="0">LLL:EXT:js_guestbook/Resources/Private/Language/locallang.xlf:label.message</numIndex>
+										<numIndex index="1">message</numIndex>
+									</numIndex>
+								</items>
+								<size>11</size>
+								<default>first_name,email</default>
+								<maxitems>25</maxitems>
+							</config>
+						</TCEforms>
+					</settings.fields.required>
+				</el>
+			</ROOT>
+		</fields>
 	</sheets>
 </T3DataStructure>
