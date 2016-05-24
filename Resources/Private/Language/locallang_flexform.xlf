@@ -37,6 +37,31 @@
 				<source>Required fields</source>
 			</trans-unit>
 
+			<trans-unit id="additional">
+				<source>Other Settings</source>
+			</trans-unit>
+			<trans-unit id="additional.javascript.jQueryLib.include">
+				<source>Include jQuery Library</source>
+			</trans-unit>
+			<trans-unit id="additional.javascript.jQueryLib.includeInFooter">
+				<source>Include jQuery Library in Footer</source>
+			</trans-unit>
+			<trans-unit id="additional.javascript.validation.include">
+				<source>jQuery Valdiation</source>
+			</trans-unit>
+			<trans-unit id="additional.javascript.validation.includeInFooter">
+				<source>jQuery Valdiation in Footer</source>
+			</trans-unit>
+			<trans-unit id="additional.css.fancy.include">
+				<source>Include Fancy CSS</source>
+			</trans-unit>
+			<trans-unit id="additional.css.responsive.include">
+				<source>Mobile compatible Layout</source>
+			</trans-unit>
+			<trans-unit id="additional.css.includeInFooter">
+				<source>Include Style in Footer</source>
+			</trans-unit>
+
 		</body>
 	</file>
 </xliff>

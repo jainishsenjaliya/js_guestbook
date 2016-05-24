@@ -23,10 +23,10 @@ Guest Book
 		en
 
 	:Description:
-		Simple Guest book with name, email, phone, www,  title, message
+		Simple Guest book with name, email, phone, www, title, message
 
 	:Keywords:
-		comma,separated,list,of,keywords
+		Guest book
 
 	:Copyright:
 		2016
@@ -53,12 +53,4 @@ Guest Book
 	:maxdepth: 3
 	:titlesonly:
 
-	Introduction/Index
-	User/Index
-	Administrator/Index
-	Configuration/Index
-	Developer/Index
-	KnownProblems/Index
-	ToDoList/Index
-	ChangeLog/Index
 	Links

@@ -1,6 +1,11 @@
-2016-06-27  Jainish Senjaliya, <jainishsenjaliya@gmail.com>
+2016-05-31  Jainish Senjaliya, <jainishsenjaliya@gmail.com>
 
-	* Manage necessary & mandatory fields via plugin options. 
+	* Manage additional configuration via plugin options.
+	* Released version 1.0.6
+
+2016-05-20  Jainish Senjaliya, <jainishsenjaliya@gmail.com>
+
+	* Manage necessary & mandatory fields via plugin options.
 	* Released version 1.0.5
 
 2016-05-27  Jainish Senjaliya, <jainishsenjaliya@gmail.com>

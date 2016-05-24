@@ -12,13 +12,13 @@ Links
 -----
 
 :TER:
-	https://typo3.org/extensions/repository/view/<extension key>
+	https://typo3.org/extensions/repository/view/js_guestbook
 
 :Bug Tracker:
-	https://forge.typo3.org/projects/extension-<extension key>/issues
+	https://forge.typo3.org/projects/extension-js_guestbook/issues
 
 :Git Repository:
-	https://github.com/<username>/<extension key>
+	https://github.com/jainishsenjaliya/js_guestbook
 
 :Contact:
-	`@<username> <https://twitter.com/your-username>`__
+	`@<Jainish Senjaliya> <https://twitter.com/jainish85>`__

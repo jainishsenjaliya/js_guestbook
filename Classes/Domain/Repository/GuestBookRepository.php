@@ -52,7 +52,7 @@ class GuestBookRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
 	 * @param $insertArray
 	 * @return
 	 */
-	public function guestBook($insertArray)
+	public function guestBook()
 	{
 		$settings = SettingsService::getSettings();
 
