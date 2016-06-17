@@ -1,3 +1,9 @@
+2016-06-17  Jainish Senjaliya, <jainishsenjaliya@gmail.com>
+
+	* Manage Receiver and user email configuration via plugin options.
+	* Must need to update Receiver and user email configuration in plugi option
+	* Released version 1.0.7
+
 2016-05-31  Jainish Senjaliya, <jainishsenjaliya@gmail.com>
 
 	* Manage additional configuration via plugin options.

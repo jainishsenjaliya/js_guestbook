@@ -26,6 +26,105 @@
 				<source>Starting Point</source>
 			</trans-unit>
 
+			<trans-unit id="receiver">
+				<source>Admin E-Mail Settings</source>
+			</trans-unit>
+			<trans-unit id="receiver.sendMail">
+				<source>Send Mail To Receiver</source>
+			</trans-unit>
+			<trans-unit id="receiver.subject">
+				<source>Subject of E-mail that will be sent to Receiver [ Empty subject disables mail ]</source>
+			</trans-unit>
+			<trans-unit id="receiver.name">
+				<source>Receiver Name</source>
+			</trans-unit>
+			<trans-unit id="receiver.email">
+				<source>Receiver E-mail</source>
+			</trans-unit>
+			<trans-unit id="receiver.sender.name">
+				<source>Sender Name [ Empty sender will be user first_name or name OR we can set {first_name} or {name} ] </source>
+			</trans-unit>
+			<trans-unit id="receiver.sender.email">
+				<source>Sender E-mail [ Empty sender will be user email address OR we can set {email} ] </source>
+			</trans-unit>
+			<trans-unit id="receiver.noreply.name">
+				<source>Reply-To Name</source>
+			</trans-unit>
+			<trans-unit id="receiver.noreply.email">
+				<source>Reply-To E-mail</source>
+			</trans-unit>
+			<trans-unit id="receiver.body.default">
+				<source>Default E-mail Template to Receiver [ Default Email template path will be EXT:js_guestbook/Resources/Private/Templates/Email/Receiver.html ]</source>
+			</trans-unit>
+			<trans-unit id="receiver.body.message">
+				<source>Body text for E-mail to Receiver</source>
+			</trans-unit>
+			<trans-unit id="receiver.cc.sendMail">
+				<source>Send Carbon copy of the mail</source>
+			</trans-unit>
+			<trans-unit id="receiver.cc.name">
+				<source>Name for the Carbon copy of mail</source>
+			</trans-unit>
+			<trans-unit id="receiver.cc.email">
+				<source>Email for the Carbon copy of mail</source>
+			</trans-unit>
+			<trans-unit id="receiver.bcc.sendMail">
+				<source>Send Hidden copy of the mail</source>
+			</trans-unit>
+			<trans-unit id="receiver.bcc.name">
+				<source>Name for the Hidden copy of mail</source>
+			</trans-unit>
+			<trans-unit id="receiver.bcc.email">
+				<source>Email for the hidden copy of mail</source>
+			</trans-unit>
+
+
+			<trans-unit id="user">
+				<source>User E-Mail Settings</source>
+			</trans-unit>
+			<trans-unit id="user.sendMail">
+				<source>Send Mail to User</source>
+			</trans-unit>
+			<trans-unit id="user.subject">
+				<source>Subject of E-mail that will be sent to user [ Empty subject disables mail ]</source>
+			</trans-unit>
+			<trans-unit id="user.sender.name">
+				<source>Sender Name</source>
+			</trans-unit>
+			<trans-unit id="user.sender.email">
+				<source>Sender E-mail</source>
+			</trans-unit>
+			<trans-unit id="user.noreply.name">
+				<source>Reply-To Name</source>
+			</trans-unit>
+			<trans-unit id="user.noreply.email">
+				<source>Reply-To E-mail</source>
+			</trans-unit>
+			<trans-unit id="user.body.default">
+				<source>Default E-mail Template to User [ Default Email template path will be EXT:js_guestbook/Resources/Private/Templates/Email/User.html ]</source>
+			</trans-unit>
+			<trans-unit id="user.body.message">
+				<source>Body text for E-mail to User</source>
+			</trans-unit>
+			<trans-unit id="user.cc.sendMail">
+				<source>Send Carbon copy of the mail</source>
+			</trans-unit>
+			<trans-unit id="user.cc.name">
+				<source>Name for the Carbon copy of mail</source>
+			</trans-unit>
+			<trans-unit id="user.cc.email">
+				<source>Email for the Carbon copy of mail</source>
+			</trans-unit>
+			<trans-unit id="user.bcc.sendMail">
+				<source>Send Hidden copy of the mail</source>
+			</trans-unit>
+			<trans-unit id="user.bcc.name">
+				<source>Name for the Hidden copy of mail</source>
+			</trans-unit>
+			<trans-unit id="user.bcc.email">
+				<source>Email for the hidden copy of mail</source>
+			</trans-unit>
+
 
 			<trans-unit id="fields">
 				<source>Form Fields</source>
