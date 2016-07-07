@@ -136,6 +136,21 @@
 				<source>Required fields</source>
 			</trans-unit>
 
+
+			<trans-unit id="thanks">
+				<source>Submit Page</source>
+			</trans-unit>
+			<trans-unit id="thanks.messageNotification">
+				<source>Notification Message</source>
+			</trans-unit>
+			<trans-unit id="thanks.redirect">
+				<source>Redirect to any other Page after submit</source>
+			</trans-unit>
+			<trans-unit id="thanks.message">
+				<source>Text on submit page</source>
+			</trans-unit>
+			
+
 			<trans-unit id="additional">
 				<source>Other Settings</source>
 			</trans-unit>

@@ -383,6 +383,64 @@
 				</el>
 			</ROOT>
 		</fields>
+		<thanks>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:js_guestbook/Resources/Private/Language/locallang_flexform.xlf:thanks</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<settings.thanks.messageNotification>
+						<TCEforms>
+							<label>LLL:EXT:js_guestbook/Resources/Private/Language/locallang_flexform.xlf:thanks.messageNotification</label>
+							<config>
+								<type>input</type>
+								<default>Thanks you for your response! We will get back to you as soon as possible!</default>
+								<size>48</size>
+								<max>100</max>
+								<eval>trim</eval>
+							</config>
+						</TCEforms>
+					</settings.thanks.messageNotification>
+					<settings.thanks.redirect>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:js_guestbook/Resources/Private/Language/locallang_flexform.xlf:thanks.redirect</label>
+							<config>
+								<type>input</type>
+								<eval>trim</eval>
+								<wizards type="array">
+									<_PADDING type="integer">2</_PADDING>
+									<link type="array">
+										<type>popup</type>
+										<title>Link</title>
+										<icon>EXT:backend/Resources/Public/Images/FormFieldWizard/wizard_link.gif</icon>
+										<module type="array">
+											<name>wizard_link</name>
+											<urlParameters type="array">
+												<mode>wizard</mode>
+											</urlParameters>
+										</module>
+										<JSopenParams>height=300,width=500,status=0,menubar=0,scrollbars=1</JSopenParams>
+									</link>
+								</wizards>
+							</config>
+						</TCEforms>
+					</settings.thanks.redirect>
+					<settings.thanks.message>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:js_guestbook/Resources/Private/Language/locallang_flexform.xlf:thanks.message</label>
+							<config>
+								<type>text</type>
+								<default>Thanks you for your response! We will get back to you as soon as possible!</default>
+							</config>
+							<defaultExtras>richtext[cut|copy|paste|formatblock|bold|italic|underline|left|center|right|orderedlist|unorderedlist|outdent|indent|link|image|line|chMode]:rte_transform[mode=ts_css]</defaultExtras>
+						</TCEforms>
+					</settings.thanks.message>
+				</el>
+			</ROOT>
+		</thanks>
 		<additional>
 			<ROOT>
 				<TCEforms>
