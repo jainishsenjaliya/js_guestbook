@@ -190,6 +190,66 @@
 							<defaultExtras>richtext[cut|copy|paste|formatblock|bold|italic|underline|left|center|right|orderedlist|unorderedlist|outdent|indent|link|image|line|chMode]:rte_transform[mode=ts_css]</defaultExtras>
 						</TCEforms>
 					</settings.receiver.body.message>
+					<settings.receiver.cc.sendMail>
+						<TCEforms>
+							<label>LLL:EXT:js_guestbook/Resources/Private/Language/locallang_flexform.xlf:receiver.cc.sendMail</label>
+							<onChange>reload</onChange>
+							<config>
+								<type>check</type>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</settings.receiver.cc.sendMail>
+					<settings.receiver.cc.name>
+						<TCEforms>
+							<label>LLL:EXT:js_guestbook/Resources/Private/Language/locallang_flexform.xlf:receiver.cc.name</label>
+							<config>
+								<type>input</type>
+								<size>30</size>
+								<max>250</max>
+							</config>
+						</TCEforms>
+					</settings.receiver.cc.name>
+					<settings.receiver.cc.email>
+						<TCEforms>
+							<label>LLL:EXT:js_guestbook/Resources/Private/Language/locallang_flexform.xlf:receiver.cc.email</label>
+							<config>
+								<type>input</type>
+								<size>30</size>
+								<max>250</max>
+							</config>
+						</TCEforms>
+					</settings.receiver.cc.email>
+					<settings.receiver.bcc.sendMail>
+						<TCEforms>
+							<label>LLL:EXT:js_guestbook/Resources/Private/Language/locallang_flexform.xlf:receiver.bcc.sendMail</label>
+							<onChange>reload</onChange>
+							<config>
+								<type>check</type>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</settings.receiver.bcc.sendMail>
+					<settings.receiver.bcc.name>
+						<TCEforms>
+							<label>LLL:EXT:js_guestbook/Resources/Private/Language/locallang_flexform.xlf:receiver.bcc.name</label>
+							<config>
+								<type>input</type>
+								<size>30</size>
+								<max>250</max>
+							</config>
+						</TCEforms>
+					</settings.receiver.bcc.name>
+					<settings.receiver.bcc.email>
+						<TCEforms>
+							<label>LLL:EXT:js_guestbook/Resources/Private/Language/locallang_flexform.xlf:receiver.bcc.email</label>
+							<config>
+								<type>input</type>
+								<size>30</size>
+								<max>250</max>
+							</config>
+						</TCEforms>
+					</settings.receiver.bcc.email>
 				</el>
 			</ROOT>
 		</receiver>
@@ -288,6 +348,66 @@
 							<defaultExtras>richtext[cut|copy|paste|formatblock|bold|italic|underline|left|center|right|orderedlist|unorderedlist|outdent|indent|link|image|line|chMode]:rte_transform[mode=ts_css]</defaultExtras>
 						</TCEforms>
 					</settings.user.body.message>
+					<settings.user.cc.sendMail>
+						<TCEforms>
+							<label>LLL:EXT:js_guestbook/Resources/Private/Language/locallang_flexform.xlf:user.cc.sendMail</label>
+							<onChange>reload</onChange>
+							<config>
+								<type>check</type>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</settings.user.cc.sendMail>
+					<settings.user.cc.name>
+						<TCEforms>
+							<label>LLL:EXT:js_guestbook/Resources/Private/Language/locallang_flexform.xlf:user.cc.name</label>
+							<config>
+								<type>input</type>
+								<size>30</size>
+								<max>250</max>
+							</config>
+						</TCEforms>
+					</settings.user.cc.name>
+					<settings.user.cc.email>
+						<TCEforms>
+							<label>LLL:EXT:js_guestbook/Resources/Private/Language/locallang_flexform.xlf:user.cc.email</label>
+							<config>
+								<type>input</type>
+								<size>30</size>
+								<max>250</max>
+							</config>
+						</TCEforms>
+					</settings.user.cc.email>
+					<settings.user.bcc.sendMail>
+						<TCEforms>
+							<label>LLL:EXT:js_guestbook/Resources/Private/Language/locallang_flexform.xlf:user.bcc.sendMail</label>
+							<onChange>reload</onChange>
+							<config>
+								<type>check</type>
+								<default>0</default>
+							</config>
+						</TCEforms>
+					</settings.user.bcc.sendMail>
+					<settings.user.bcc.name>
+						<TCEforms>
+							<label>LLL:EXT:js_guestbook/Resources/Private/Language/locallang_flexform.xlf:user.bcc.name</label>
+							<config>
+								<type>input</type>
+								<size>30</size>
+								<max>250</max>
+							</config>
+						</TCEforms>
+					</settings.user.bcc.name>
+					<settings.user.bcc.email>
+						<TCEforms>
+							<label>LLL:EXT:js_guestbook/Resources/Private/Language/locallang_flexform.xlf:user.bcc.email</label>
+							<config>
+								<type>input</type>
+								<size>30</size>
+								<max>250</max>
+							</config>
+						</TCEforms>
+					</settings.user.bcc.email>
 				</el>
 			</ROOT>
 		</user>

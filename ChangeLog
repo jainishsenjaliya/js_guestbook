@@ -1,3 +1,8 @@
+2016-07-08  Jainish Senjaliya, <jainishsenjaliya@gmail.com>
+
+	* CC and BCC email configuration for receiver and user via plugin options.
+	* Released version 1.0.9
+
 2016-06-25  Jainish Senjaliya, <jainishsenjaliya@gmail.com>
 
 	* Manage redirect link and submit message via plugin options.
