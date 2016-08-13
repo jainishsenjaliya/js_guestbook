@@ -228,4 +228,5 @@ class GuestBookController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContro
 				
 		header('Location:' . $url); die;
 	}
+
 }
