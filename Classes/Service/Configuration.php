@@ -42,13 +42,6 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 class Configuration implements \TYPO3\CMS\Core\SingletonInterface {
 
 	/**
-	 * settingsService
-	 *
-	 * @var \JS\JsGuestbook\Service\SettingsService
-	 * @inject
-	 */
-	protected $settingsService = NULL;
-	/**
 	 * template
 	 *
 	 * @return
@@ -56,7 +49,7 @@ class Configuration implements \TYPO3\CMS\Core\SingletonInterface {
 	 
 	function template()
 	{
-		$settings = $this->settingsService->getSettings();
+		$settings = SettingsService::getSettings();
 
 		if($settings['configuration']!=1){
 			return array("error"=>'include_template');
@@ -105,7 +98,7 @@ class Configuration implements \TYPO3\CMS\Core\SingletonInterface {
 	
 	function additionalData()
 	{
-		$settings = $this->settingsService->getSettings();
+		$settings = SettingsService::getSettings();
 
 		$key = 'JsGuestbook';
 
