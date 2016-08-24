@@ -1,12 +1,7 @@
 <?php
 namespace JS\JsGuestbook\Controller;
 
-use JS\JsGuestbook\Service\Configuration;
-use JS\JsGuestbook\Service\GuestBookService;
-use JS\JsGuestbook\Service\Template;
-
 use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface;
 
 /***************************************************************
  *
@@ -38,7 +33,6 @@ use TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface;
  */
 class GuestBookController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 {
-
 	/**
 	 * guestBookRepository
 	 *
@@ -46,7 +40,23 @@ class GuestBookController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContro
 	 * @inject
 	 */
 	protected $guestBookRepository = NULL;
-	
+
+	/**
+	 * guestBookService
+	 *
+	 * @var \JS\JsGuestbook\Service\GuestBookService
+	 * @inject
+	 */
+	protected $guestBookService = NULL;
+
+	/**
+	 * configuration
+	 *
+	 * @var \JS\JsGuestbook\Service\Configuration
+	 * @inject
+	 */
+	protected $configuration = NULL;
+
 	/**
 	 * action guestBook
 	 *
@@ -60,11 +70,11 @@ class GuestBookController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContro
 		
 		$this->contentObj = $this->configurationManager->getContentObject();
 
-		$message = Configuration::getSessionData('message');
+		$message = $this->configuration->getSessionData('message');
 
 		$this->settings['contentID'] = md5($this->contentObj->data['uid']);
 
-		$template = Configuration::template();
+		$template = $this->configuration->template();
 
 		if ($this->request->hasArgument('guestBookSubmit')) {
 
@@ -76,7 +86,7 @@ class GuestBookController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContro
 			}
 		}
 
-		$formFields = GuestBookService::formFields($fieldsValue);
+		$formFields = $this->guestBookService->formFields($fieldsValue);
 
 		if ($this->request->hasArgument('guestBookSubmit')) {
 
@@ -84,7 +94,7 @@ class GuestBookController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContro
 			
 			if($this->settings['contentID'] ==$data['content']){
 				
-				$validate = GuestBookService::validate($data);
+				$validate = $this->guestBookService->validate($data);
 
 				if (count($validate) > 0) {
 
@@ -96,9 +106,9 @@ class GuestBookController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContro
 
 				}else{
 
-					$userInformation = GuestBookService::userInformation($data,$formFields);
+					$userInformation = $this->guestBookService->userInformation($data,$formFields);
 
-					$mailUserInformation = GuestBookService::mailUserInformation($userInformation, $formFields);
+					$mailUserInformation = $this->guestBookService->mailUserInformation($userInformation, $formFields);
 
 					$arr = array(
 						'baseURL'			=> $this->request->getBaseUri(),
@@ -113,34 +123,34 @@ class GuestBookController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContro
 					$userBody = $this->settings['user']['body'];
 
 					if($userBody['default']==1){
-						$user_email_body = GuestBookService::userEmailTemplate($variable);
+						$user_email_body = $this->guestBookService->userEmailTemplate($variable);
 					}else{
 						$user_email_body = nl2br(nl2br($userBody['message']));
 					}
 
-					$user_email_body = GuestBookService::rewriteVariables($variable, $user_email_body);
+					$user_email_body = $this->guestBookService->rewriteVariables($variable, $user_email_body);
 
 					$receiverBody = $this->settings['receiver']['body'];
 
 					if($receiverBody['default']==1){
-						$receiver_email_body	= GuestBookService::receiverEmailTemplate($variable);
+						$receiver_email_body	= $this->guestBookService->receiverEmailTemplate($variable);
 					}else{
 						$receiver_email_body = nl2br(nl2br($receiverBody['message']));
 					}
 
-					$receiver_email_body = GuestBookService::rewriteVariables($variable, $receiver_email_body);
+					$receiver_email_body = $this->guestBookService->rewriteVariables($variable, $receiver_email_body);
 
 					$userMailSent = $receiverMailSent = 0;
 
 					$userSetting = $this->settings['user'];
 
-					$this->settings['receiver']['sender'] = GuestBookService::setReceiverNameandEmail($userInformation);
+					$this->settings['receiver']['sender'] = $this->guestBookService->setReceiverNameandEmail($userInformation);
 
 					if ($userSetting['sendMail'] == 1 && !empty($userSetting['subject']) && 
 							!empty($userInformation['email']) && filter_var($userInformation['email'], FILTER_VALIDATE_EMAIL)
 							 && filter_var($userSetting['sender']['email'], FILTER_VALIDATE_EMAIL)) {
 
-						$userMailSent = GuestBookService::sentMailToUser($user_email_body, $userInformation, $this->settings);
+						$userMailSent = $this->guestBookService->sentMailToUser($user_email_body, $userInformation, $this->settings);
 					}
 
 					$receiverSetting = $this->settings['receiver'];
@@ -149,14 +159,14 @@ class GuestBookController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContro
 						!empty($receiverSetting['email']) && filter_var($receiverSetting['email'], FILTER_VALIDATE_EMAIL)
 						 && filter_var($receiverSetting['sender']['email'], FILTER_VALIDATE_EMAIL)) {
 
-						$receiverMailSent = GuestBookService::sentMailToReceiver($receiver_email_body, $userInformation, $this->settings);
+						$receiverMailSent = $this->guestBookService->sentMailToReceiver($receiver_email_body, $userInformation, $this->settings);
 					}
 
 					$mailBody = array('receiver_email_body' => $receiver_email_body, 'user_email_body' => $user_email_body,
 										'user_email_sent' => $userMailSent, 'receiver_email_sent' => $receiverMailSent,
 									 );
 
-					$marketingInformation = GuestBookService::marketingInformation($this->settings, $userInformation, $mailBody);
+					$marketingInformation = $this->guestBookService->marketingInformation($this->settings, $userInformation, $mailBody);
 
 					$insertArray = array_merge($userInformation, $marketingInformation);
 
@@ -166,7 +176,7 @@ class GuestBookController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContro
 
 						$sessionData = array("success"=>array("successfully_contacted"=>"successfully_contacted"));
 
-						Configuration::setSessionData('message',$sessionData);
+						$this->configuration->setSessionData('message',$sessionData);
 
 						$link = $this->settings['thanks']['redirect']!=""?$this->settings['thanks']['redirect']:$GLOBALS['TSFE']->id;
 
@@ -176,7 +186,7 @@ class GuestBookController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContro
 
 						$sessionData = array("info"=>array("mail_not_sent"));
 
-						Configuration::setSessionData('message',$sessionData);
+						$this->configuration->setSessionData('message',$sessionData);
 
 						$this->redirectURL();
 
@@ -208,7 +218,7 @@ class GuestBookController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContro
 		$this->view->assignMultiple($assignedValues);
 
 		// Include Additional Data
-		Configuration::additionalData();
+		$this->configuration->additionalData();
 	}
 	
 	/**
@@ -228,5 +238,4 @@ class GuestBookController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContro
 				
 		header('Location:' . $url); die;
 	}
-
 }

@@ -1,11 +1,6 @@
 <?php
 namespace JS\JsGuestbook\Service;
 
-use JS\JsGuestbook\Service\SettingsService;
-use JS\JsGuestbook\Service\Configuration;
-use JS\JsGuestbook\Service\Template;
-use JS\JsGuestbook\Service\Email;
-
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 /***************************************************************
@@ -52,6 +47,38 @@ class GuestBookService implements \TYPO3\CMS\Core\SingletonInterface {
 	 * @inject
 	 */
 	protected $guestBookRepository = NULL;
+
+	/**
+	 * settingsService
+	 *
+	 * @var \JS\JsGuestbook\Service\SettingsService
+	 * @inject
+	 */
+	protected $settingsService = NULL;
+
+	/**
+	 * configuration
+	 *
+	 * @var \JS\JsGuestbook\Service\Configuration
+	 * @inject
+	 */
+	protected $configuration = NULL;
+
+	/**
+	 * email
+	 *
+	 * @var \JS\JsGuestbook\Service\Email
+	 * @inject
+	 */
+	protected $email = NULL;
+
+	/**
+	 * template
+	 *
+	 * @var \JS\JsGuestbook\Service\Template
+	 * @inject
+	 */
+	protected $template = NULL;
 	
 	/**
 	 * formFields
@@ -62,11 +89,11 @@ class GuestBookService implements \TYPO3\CMS\Core\SingletonInterface {
 	 
 	function formFields($fieldsValue = array())
 	{
-		$settings = SettingsService::getSettings();
+		$settings = $this->settingsService->getSettings();
 
-		$arr = Configuration::dataExplode($settings['fields']['form']);
+		$arr = $this->configuration->dataExplode($settings['fields']['form']);
 
-		$requireArr = Configuration::dataExplode($settings['fields']['required']);
+		$requireArr = $this->configuration->dataExplode($settings['fields']['required']);
 
 		$fields = array();
 
@@ -83,7 +110,7 @@ class GuestBookService implements \TYPO3\CMS\Core\SingletonInterface {
 				$data = array();
 
 				if(strtolower($filedType)=="radio"){
-					$data = array('data' => Configuration::dataExplode($settings['fields'][$value]));
+					$data = array('data' => $this->configuration->dataExplode($settings['fields'][$value]));
 				}
 
 				$arr = array('field' => $value, 'validate' => $validate, 'value' => $fieldsValue[$value], 'type' => ucfirst($filedType));
@@ -104,9 +131,9 @@ class GuestBookService implements \TYPO3\CMS\Core\SingletonInterface {
 	 
 	function validate($formFields)
 	{
-		$settings = SettingsService::getSettings();
+		$settings = $this->settingsService->getSettings();
 
-		$require = Configuration::dataExplode($settings['fields']['required']);
+		$require = $this->configuration->dataExplode($settings['fields']['required']);
 
 		$error = array();
 
@@ -205,7 +232,7 @@ class GuestBookService implements \TYPO3\CMS\Core\SingletonInterface {
 
 		$templateName = 'Email/UserInformation.html';
 
-		$view = Template::getView($templateName);
+		$view = $this->template->getView($templateName);
 
 		$view->assignMultiple($variables);
 		
@@ -221,11 +248,11 @@ class GuestBookService implements \TYPO3\CMS\Core\SingletonInterface {
 	
 	function userEmailTemplate($variables)
 	{
-		$settings = SettingsService::getSettings();
+		$settings = $this->settingsService->getSettings();
 
 		$templateName = $settings['user']['emailTemplate']==""?$settings['user']['emailTemplate']:'Email/User.html';
 
-		$view = Template::getView($templateName);
+		$view = $this->template->getView($templateName);
 
 		$view->assignMultiple($variables);
 		
@@ -241,11 +268,11 @@ class GuestBookService implements \TYPO3\CMS\Core\SingletonInterface {
 	
 	function receiverEmailTemplate($variables)
 	{
-		$settings = SettingsService::getSettings();
+		$settings = $this->settingsService->getSettings();
 
 		$templateName = $settings['receiver']['emailTemplate']==""?$settings['receiver']['emailTemplate']:'Email/Receiver.html';
 
-		$view = Template::getView($templateName);
+		$view = $this->template->getView($templateName);
 
 		$view->assignMultiple($variables);
 		
@@ -278,7 +305,7 @@ class GuestBookService implements \TYPO3\CMS\Core\SingletonInterface {
 	
 	function setReceiverNameandEmail($userInformation){
 
-		$settings = SettingsService::getSettings();
+		$settings = $this->settingsService->getSettings();
 
 		$sender		= $settings['receiver']['sender'];
 
@@ -318,7 +345,7 @@ class GuestBookService implements \TYPO3\CMS\Core\SingletonInterface {
 
 		$templateName = 'Email/HTMLFormat.html';
 
-		$view = Template::getView($templateName);
+		$view = $this->template->getView($templateName);
 
 		$view->assignMultiple($variables);
 		
@@ -354,7 +381,7 @@ class GuestBookService implements \TYPO3\CMS\Core\SingletonInterface {
 			
 			$toArr = array(0 => array('name' => $userInformation['name'], 'email' => $to));
 
-			$sentMail = Email::sendMail($toArr, $subject, $mailContent, $plain, $fromEmail, $fromName, $replyToEmail, $replyToName, $ccName, $ccEmail, $bccName, $bccEmail, $returnPath, $attachements);
+			$sentMail = $this->email->sendMail($toArr, $subject, $mailContent, $plain, $fromEmail, $fromName, $replyToEmail, $replyToName, $ccName, $ccEmail, $bccName, $bccEmail, $returnPath, $attachements);
 
 		}
 		return $sentMail;
@@ -375,7 +402,7 @@ class GuestBookService implements \TYPO3\CMS\Core\SingletonInterface {
 
 		$templateName = 'Email/HTMLFormat.html';
 
-		$view = Template::getView($templateName);
+		$view = $this->template->getView($templateName);
 
 		$view->assignMultiple($variables);
 		
@@ -412,7 +439,7 @@ class GuestBookService implements \TYPO3\CMS\Core\SingletonInterface {
 		if ($to != '') {
 
 			$toArr = array(0 => array('name' => $settings['receiver']['name'], 'email' => $to));
-			$sentMail = Email::sendMail($toArr, $subject, $mailContent, $plain, $fromEmail,  $fromName, $replyToEmail, $replyToName, $ccName, $ccEmail, $bccName, $bccEmail, $returnPath, $attachements);
+			$sentMail = $this->email->sendMail($toArr, $subject, $mailContent, $plain, $fromEmail,  $fromName, $replyToEmail, $replyToName, $ccName, $ccEmail, $bccName, $bccEmail, $returnPath, $attachements);
 		}
 
 		return $sentMail;
@@ -441,7 +468,7 @@ class GuestBookService implements \TYPO3\CMS\Core\SingletonInterface {
 				'receiver_email_subject'	=> $settings['receiver']['subject'],
 				'user_email_subject'		=> $settings['user']['subject'],
 				
-				'ip'					=> Configuration::geIPAddress(),
+				'ip'					=> $this->configuration->geIPAddress(),
 				'useragent'	 			=> GeneralUtility::getIndpEnv('HTTP_USER_AGENT'),
 				'website_language'		=> $language,
 				'website_language_id'	=> $GLOBALS['TSFE']->sys_language_uid,
@@ -449,5 +476,4 @@ class GuestBookService implements \TYPO3\CMS\Core\SingletonInterface {
 
 		return $marketingInfo;
 	}
-
 }

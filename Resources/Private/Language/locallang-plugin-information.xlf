@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-02-04T18:59:03Z" product-name="js_guestbook">
+		<header/>
+		<body>
+			<trans-unit id="plugin-title">
+				<source>Guest Book</source>
+			</trans-unit>
+			
+			<trans-unit id="plugin-settings">
+				<source>Settings</source>
+			</trans-unit>
+			
+			<trans-unit id="plugin-value">
+				<source>Values</source>
+			</trans-unit>
+
+			<trans-unit id="receiver.configuration">
+				<source>Receiver configuration</source>
+			</trans-unit>
+
+			<trans-unit id="receiver.name">
+				<source>Receivers Name</source>
+			</trans-unit>
+
+			<trans-unit id="receiver.email">
+				<source>Receivers Email</source>
+			</trans-unit>
+			
+			<trans-unit id="receiver.subject">
+				<source>Subject for Email to Receiver</source>
+			</trans-unit>
+
+			<trans-unit id="receiver.sendMail">
+				<source>Send Mail To Receiver</source>
+			</trans-unit>
+
+			<trans-unit id="user.configuration">
+				<source>User configuration</source>
+			</trans-unit>
+			
+			<trans-unit id="user.sender.name">
+				<source>Sender Name</source>
+			</trans-unit>
+
+			<trans-unit id="user.sender.email">
+				<source>Sender Email</source>
+			</trans-unit>
+			
+			<trans-unit id="user.subject">
+				<source>Subject for Email to User</source>
+			</trans-unit>
+
+			<trans-unit id="user.sendMail">
+				<source>Send Mail To User</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>
