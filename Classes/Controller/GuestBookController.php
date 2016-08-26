@@ -40,7 +40,7 @@ class GuestBookController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContro
 	 * @inject
 	 */
 	protected $guestBookRepository = NULL;
-
+	
 	/**
 	 * guestBookService
 	 *
@@ -238,4 +238,5 @@ class GuestBookController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContro
 				
 		header('Location:' . $url); die;
 	}
+
 }

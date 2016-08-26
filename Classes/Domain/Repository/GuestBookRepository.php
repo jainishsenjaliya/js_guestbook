@@ -36,6 +36,14 @@ class GuestBookRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
 {
 
 	/**
+	 * settingsService
+	 *
+	 * @var \JS\JsGuestbook\Service\SettingsService
+	 * @inject
+	 */
+	protected $settingsService = NULL;
+
+	/**
 	 * insertUserData
 	 *
 	 * @param $insertArray
@@ -54,7 +62,7 @@ class GuestBookRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
 	 */
 	public function guestBook()
 	{
-		$settings = SettingsService::getSettings();
+		$settings = $this->settingsService->getSettings();
 
 		$field = '*';
 		

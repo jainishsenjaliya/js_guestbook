@@ -341,7 +341,7 @@ class GuestBookService implements \TYPO3\CMS\Core\SingletonInterface {
 	
 	public function sentMailToUser($mailContent, $userInformation, $settings){
 
-		$variables['mail_content'] = $mailContent;
+		/*$variables['mail_content'] = $mailContent;
 
 		$templateName = 'Email/HTMLFormat.html';
 
@@ -349,7 +349,7 @@ class GuestBookService implements \TYPO3\CMS\Core\SingletonInterface {
 
 		$view->assignMultiple($variables);
 		
-		$mailContent = $view->render(); 
+		$mailContent = $view->render();*/
 		
 		$returnPath = $attachements = $plain = $ccName = $ccEmail = $bccName = $bccEmail = $sentMail = '';
 
@@ -398,7 +398,7 @@ class GuestBookService implements \TYPO3\CMS\Core\SingletonInterface {
 	
 	public function sentMailToReceiver($mailContent, $userInformation, $settings){
 
-		$variables['mail_content'] = $mailContent;
+		/*$variables['mail_content'] = $mailContent;
 
 		$templateName = 'Email/HTMLFormat.html';
 
@@ -406,7 +406,7 @@ class GuestBookService implements \TYPO3\CMS\Core\SingletonInterface {
 
 		$view->assignMultiple($variables);
 		
-		$mailContent = $view->render(); 
+		$mailContent = $view->render(); */
 		
 		$returnPath = $attachements = $plain = $ccName = $ccEmail = $bccName = $bccEmail = $sentMail = '';
 
@@ -476,4 +476,5 @@ class GuestBookService implements \TYPO3\CMS\Core\SingletonInterface {
 
 		return $marketingInfo;
 	}
+
 }

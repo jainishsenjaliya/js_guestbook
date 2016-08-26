@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-01-09T16:25:59Z" product-name="js_guestbook">
+		<header/>
+		<body>
+			<trans-unit id="palette.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="palette.contact">
+				<source>Contact</source>
+			</trans-unit>
+			<trans-unit id="palette.others">
+				<source>Others</source>
+			</trans-unit>
+			<trans-unit id="marketing">
+				<source>Marketing</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -123,7 +123,6 @@ return array(
 				'type' => 'input',
 				'size' => 30,
 				'eval' => 'trim',
-				'readOnly' => 'readOnly'
 			),
 		),
 		'first_name' => array(
@@ -209,7 +208,6 @@ return array(
 				'eval' => 'datetime',
 				'checkbox' => 1,
 				'default' => time(),
-				'readOnly' => 'readOnly'
 			),
 		),
 		'receiver_email_subject' => array(
@@ -220,7 +218,6 @@ return array(
 				'cols' => 30,
 				'rows' => 2,
 				'eval' => 'trim',
-				'readOnly' => 'readOnly'
 			)
 		),
 		'user_email_subject' => array(
@@ -231,7 +228,6 @@ return array(
 				'cols' => 30,
 				'rows' => 2,
 				'eval' => 'trim',
-				'readOnly' => 'readOnly'
 			)
 		),
 		'ip' => array(
@@ -241,7 +237,6 @@ return array(
 				'type' => 'input',
 				'size' => 30,
 				'eval' => 'trim',
-				'readOnly' => 'readOnly'
 			),
 		),
 		'useragent' => array(
@@ -252,7 +247,6 @@ return array(
 				'cols' => 30,
 				'rows' => 2,
 				'eval' => 'trim',
-				'readOnly' => 'readOnly'
 			)
 		),
 		'website_language' => array(
@@ -262,7 +256,6 @@ return array(
 				'type' => 'input',
 				'size' => 30,
 				'eval' => 'trim',
-				'readOnly' => 'readOnly'
 			),
 		),
 		'website_language_id' => array(
@@ -272,9 +265,9 @@ return array(
 				'type' => 'input',
 				'size' => 30,
 				'eval' => 'trim',
-				'readOnly' => 'readOnly'
 			),
 		),
-		
 	),
-);## EXTENSION BUILDER DEFAULTS END TOKEN - Everything BEFORE this line is overwritten with the defaults of the extension builder
+);
+
+## EXTENSION BUILDER DEFAULTS END TOKEN - Everything BEFORE this line is overwritten with the defaults of the extension builder

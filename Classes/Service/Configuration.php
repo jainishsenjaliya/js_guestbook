@@ -1,7 +1,6 @@
 <?php
 namespace JS\JsGuestbook\Service;
 
-use JS\JsGuestbook\Service\SettingsService;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 /***************************************************************
@@ -48,6 +47,7 @@ class Configuration implements \TYPO3\CMS\Core\SingletonInterface {
 	 * @inject
 	 */
 	protected $settingsService = NULL;
+
 	/**
 	 * template
 	 *
