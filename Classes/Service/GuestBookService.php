@@ -41,6 +41,16 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 class GuestBookService implements \TYPO3\CMS\Core\SingletonInterface {
 
 	/**
+	 * @var string
+	 */
+	protected $nameCompatFormat = '%1$s %2$s';	
+
+	/**
+	 * @var bool
+	 */
+	protected $storeCompatName = true;
+
+	/**
 	 * guestBookRepository
 	 *
 	 * @var \JS\JsGuestbook\Domain\Repository\GuestBookRepository
@@ -193,19 +203,53 @@ class GuestBookService implements \TYPO3\CMS\Core\SingletonInterface {
 			}
 		}
 
-		$format = '%1$s %2$s';
+		$var = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['js_guestbook']);
 
-		$combinedName = trim(sprintf(
-			$format,
-			$formFields['first_name']['value'],
-			$formFields['last_name']['value']
-		));
+		if(isset($var['storeCompatName'])){
+			$isCombinedName = $var['storeCompatName'];
+		}else{
+			$isCombinedName = $this->getStoreCompatName();	
+		}
 
-		if (!empty($combinedName)) {
-			$userInfo['name'] = $combinedName;
+
+		if($isCombinedName == 1){
+
+			if((string)$var['nameCompatFormat'] && $var['nameCompatFormat']!=""){
+				$format = $var['nameCompatFormat'];
+			}else{
+				$format = $this->getNameCompatFormat();	
+			}
+
+			$combinedName = trim(sprintf(
+				$format,
+				$formFields['first_name']['value'],
+				$formFields['last_name']['value']
+			));
+
+			if (!empty($combinedName)) {
+				$userInfo['name'] = $combinedName;
+			}
+		}else{
+			$userInfo['name'] = $formFields['first_name'];
 		}
 
 		return $userInfo;
+	}
+
+	/**
+	 * @return string
+	 */
+	public function getNameCompatFormat()
+	{
+		return $this->nameCompatFormat;
+	}
+
+	/**
+	 * @return string
+	 */
+	public function getStoreCompatName()
+	{
+		return $this->storeCompatName;
 	}
 
 	/**

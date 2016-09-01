@@ -33,6 +33,7 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
  */
 class GuestBookController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 {
+
 	/**
 	 * guestBookRepository
 	 *
@@ -238,5 +239,4 @@ class GuestBookController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionContro
 				
 		header('Location:' . $url); die;
 	}
-
 }
