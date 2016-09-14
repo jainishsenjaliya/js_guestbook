@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file target-language="de" datatype="plaintext" original="messages" date="2016-05-31T19:11:09Z" product-name="js_guestbook">
+		<header/>
+		<body>
+			<trans-unit id="dear">
+				<target>Sehr geehrter Herr / Frau</target>
+			</trans-unit>
+			<trans-unit id="user.message_before_contact_data">
+				<target>Vielen Dank für Ihre Anfrage!</target>
+			</trans-unit>
+			<trans-unit id="user.message_after_contact_data">
+				<target>Wenn Sie Fragen zu unseren Leistungen haben, können Sie uns jederzeit kontaktieren.</target>
+			</trans-unit>
+			<trans-unit id="admin.message_before_contact_data">
+				<target>Die folgende Person hat das Gästebuch Formular ausgefüllt unter {current_page}:</target>
+			</trans-unit>
+			<trans-unit id="admin.message_after_contact_data">
+				<target></target>
+			</trans-unit>
+			<trans-unit id="regards">
+				<target>Mit freundlichen Grüßen,</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

@@ -349,7 +349,7 @@ class GuestBookService implements \TYPO3\CMS\Core\SingletonInterface {
 	
 	function setReceiverNameandEmail($userInformation){
 
-		$settings = $this->settingsService->getSettings();
+		$settings	= $this->settingsService->getSettings();
 
 		$sender		= $settings['receiver']['sender'];
 
@@ -368,7 +368,7 @@ class GuestBookService implements \TYPO3\CMS\Core\SingletonInterface {
 		$fromEmail	= trim($sender['email']);
 
 		if($fromEmail=="{email}" || $fromEmail==""){
-			$fromEmail = $userInformation['email'];
+			$fromEmail = !empty($userInformation['email'])?$userInformation['email']:"";
 		}
 		
 		return array("name"=>$fromName, "email"=>$fromEmail);
@@ -393,7 +393,7 @@ class GuestBookService implements \TYPO3\CMS\Core\SingletonInterface {
 
 		$view->assignMultiple($variables);
 		
-		$mailContent = $view->render();*/
+		$mailContent = $view->render(); */
 		
 		$returnPath = $attachements = $plain = $ccName = $ccEmail = $bccName = $bccEmail = $sentMail = '';
 

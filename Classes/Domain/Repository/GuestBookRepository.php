@@ -42,7 +42,7 @@ class GuestBookRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
 	 * @inject
 	 */
 	protected $settingsService = NULL;
-
+	
 	/**
 	 * insertUserData
 	 *

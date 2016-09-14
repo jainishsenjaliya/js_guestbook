@@ -1,166 +1,166 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2016-03-25T19:11:09Z" product-name="js_guestbook">
+	<file target-language="de" datatype="plaintext" original="messages" date="2016-05-31T19:11:09Z" product-name="js_guestbook">
 		<header/>
 		<body>
 			<trans-unit id="tx_jsguestbook_domain_model_guestbook">
-				<source>Guest Book</source>
+				<target>Gästebuch</target>
 			</trans-unit>
 			<trans-unit id="tx_jsguestbook_domain_model_guestbook.name">
-				<source>Name</source>
+				<target>Name</target>
 			</trans-unit>
 			<trans-unit id="tx_jsguestbook_domain_model_guestbook.first_name">
-				<source>First Name</source>
+				<target>Vorname</target>
 			</trans-unit>
 			<trans-unit id="tx_jsguestbook_domain_model_guestbook.last_name">
-				<source>Last Name</source>
+				<target>Nachname</target>
 			</trans-unit>
 			<trans-unit id="tx_jsguestbook_domain_model_guestbook.title">
-				<source>Title</source>
+				<target>Titel</target>
 			</trans-unit>
 			<trans-unit id="tx_jsguestbook_domain_model_guestbook.email">
-				<source>Email</source>
+				<target>E-Mail</target>
 			</trans-unit>
 			<trans-unit id="tx_jsguestbook_domain_model_guestbook.phone">
-				<source>Phone</source>
+				<target>Telefon</target>
 			</trans-unit>
 			<trans-unit id="tx_jsguestbook_domain_model_guestbook.www">
-				<source>Www</source>
+				<target>Homepage</target>
 			</trans-unit>
 			<trans-unit id="tx_jsguestbook_domain_model_guestbook.message">
-				<source>Message</source>
+				<target>Nachricht</target>
 			</trans-unit>
 			<trans-unit id="tx_jsguestbook_domain_model_guestbook.comment">
-				<source>Comment</source>
+				<target>Kommentar</target>
 			</trans-unit>
 			<trans-unit id="tx_jsguestbook_domain_model_guestbook.creation_date">
-				<source>Creation Date</source>
+				<target>Erstellungsdatum</target>
 			</trans-unit>
 			<trans-unit id="tx_jsguestbook_domain_model_guestbook.receiver_email_subject">
-				<source>Receiver Email Subject</source>
+				<target> Betreff E-Mail Empfänger </target>
 			</trans-unit>
 			<trans-unit id="tx_jsguestbook_domain_model_guestbook.user_email_subject">
-				<source>User Email Subject</source>
+				<target>Betreff Benutzer E-Mail </target>
 			</trans-unit>
 			<trans-unit id="tx_jsguestbook_domain_model_guestbook.ip">
-				<source>Ip</source>
+				<target>IP-Adresse</target>
 			</trans-unit>
 			<trans-unit id="tx_jsguestbook_domain_model_guestbook.useragent">
-				<source>Useragent</source>
+				<target>Useragent</target>
 			</trans-unit>
 			<trans-unit id="tx_jsguestbook_domain_model_guestbook.website_language">
-				<source>Website Language</source>
+				<target>Website-Sprache</target>
 			</trans-unit>
 			<trans-unit id="tx_jsguestbook_domain_model_guestbook.website_language_id">
-				<source>Website Language Id</source>
+				<target>Website-Sprache Id</target>
 			</trans-unit>
 
 			<trans-unit id="pages.doktype">
-				<source>Guest Book</source>
+				<target>Gästebuch</target>
 			</trans-unit>
 
 			<trans-unit id="label.guestbook_form">
-				<source>Guest Book Form</source>
+				<target>Gästebuch Formular</target>
 			</trans-unit>
 			
 			<trans-unit id="label.first_name">
-				<source>First Name</source>
+				<target>Vorname</target>
 			</trans-unit>
 			<trans-unit id="label.last_name">
-				<source>Last Name</source>
+				<target>Nachname</target>
 			</trans-unit>
 			<trans-unit id="label.title">
-				<source>Title</source>
+				<target>Titel</target>
 			</trans-unit>
 			<trans-unit id="label.email">
-				<source>Email</source>
+				<target>Email</target>
 			</trans-unit>
 			<trans-unit id="label.phone">
-				<source>Phone</source>
+				<target>Telefon</target>
 			</trans-unit>
 			<trans-unit id="label.www">
-				<source>URL</source>
+				<target>URL(Webadresse)</target>
 			</trans-unit>
 			<trans-unit id="label.message">
-				<source>Message</source>
+				<target>Nachricht</target>
 			</trans-unit>
 			<trans-unit id="label.save">
-				<source>Save</source>
+				<target>Speichern</target>
 			</trans-unit>
 			<trans-unit id="label.comment.header">
-				<source>Comment from webmaster</source>
+				<target>Kommentar von Webmaster</target>
 			</trans-unit>
 			<trans-unit id="required.field.alert">
-				<source>Please fill all required fields.</source>
+				<target>Bitte füllen Sie alle notwendigen Felder aus.</target>
 			</trans-unit>
 			<trans-unit id="message.error.blank_first_name">
-				<source>First name cannot be blank</source>
+				<target>Vorname darf nicht leer sein</target>
 			</trans-unit>
 			<trans-unit id="message.error.blank_last_name">
-				<source>Last name cannot be blank</source>
+				<target>Nachname darf nicht leer sein</target>
 			</trans-unit>
 			<trans-unit id="message.error.blank_title">
-				<source>Title cannot be blank</source>
+				<target>Der Titel darf leer sein</target>
 			</trans-unit>
 			<trans-unit id="message.error.blank_email">
-				<source>Email address cannot be blank</source>
+				<target>E-Mail-Adresse darf nicht leer sein</target>
 			</trans-unit>
 			<trans-unit id="message.error.valid_email">
-				<source>Please enter valid email</source>
+				<target>Bitte eine gültige Email eingeben</target>
 			</trans-unit>
 			<trans-unit id="message.error.blank_phone">
-				<source>Phone cannot be blank</source>
+				<target>Telefon darf nicht leer sein</target>
 			</trans-unit>
 			<trans-unit id="message.error.valid_phone">
-				<source>Please enter valid Phone</source>
+				<target>Bitte geben Sie eine gültige Telefon-Nr. an</target>
 			</trans-unit>
 			<trans-unit id="message.error.blank_www">
-				<source>URL cannot be blank</source>
+				<target>URL darf nicht leer sein</target>
 			</trans-unit>
 			<trans-unit id="message.error.valid_www">
-				<source>Please enter valid URL</source>
+				<target>Bitte geben Sie eine gültige URL an</target>
 			</trans-unit>
 			<trans-unit id="message.error.blank_message">
-				<source>Message cannot be blank</source>
+				<target>Nachricht darf nicht leer sein</target>
 			</trans-unit>
 			<trans-unit id="message.error.blank_captcha">
-				<source>Please enter result here</source>
+				<target>Bitte tragen Sie hier das Ergebnis ein</target>
 			</trans-unit>
 			<trans-unit id="message.error.valid_captcha">
-				<source>Wrong captcha code entered</source>
+				<target>Sie haben einen Falscher Captcha-Code eingegeben</target>
 			</trans-unit>
 			<trans-unit id="error">
-				<source>Something missing while configuration</source>
+				<target>Etwas wurde nicht in der Konfiguration angegeben</target>
 			</trans-unit>
 			<trans-unit id="message.error.include_template">
-				<source>Are you sure that you have included the "Main" static template?</source>
+				<target>Sind Sie sich sicher, dass Sie das "Main" static template mit einbezogen haben?</target>
 			</trans-unit>
 			<trans-unit id="message.error.receiver.missing_configuration">
-				<source>Email configuration for receiver is missing.</source>
+				<target>Die Email Konfiguration von den Empfänger fehlt.</target>
 			</trans-unit>
 			<trans-unit id="message.error.user.missing_configuration">
-				<source>Email configuration for user is missing.</source>
+				<target>Die Benutzerkonfiguration fehlt.</target>
 			</trans-unit>
 			<trans-unit id="message.error.missing_configuration">
-				<source>Something missing while configuration</source>
+				<target>Etwas wurde nicht in der Konfiguration angegeben</target>
 			</trans-unit>
 			<trans-unit id="message.error.missing_field_configuration">
-				<source>You have to set atleast one field in the plugin option.</source>
+				<target>Sie müssen wenigstens ein Feld in den plugin options setzen.</target>
 			</trans-unit>
 			<trans-unit id="message.error.missing_startingPoint">
-				<source>Please set starting point in plugin configuration.</source>
+				<target>Bitte legen Sie den Startpunkt in der Konfiguration fest.</target>
 			</trans-unit>
 			<trans-unit id="message.error.">
-				<source>We kindly request you again to contact us.</source>
+				<target>Wir fordern Sie höflich auf uns ein noch einmal zu kontaktieren.</target>
 			</trans-unit>
 			<trans-unit id="message.error.data_not_inserted">
-				<source>We kindly request you again to contact us.</source>
+				<target>Wir fordern Sie höflich auf uns ein noch einmal zu kontaktieren.</target>
 			</trans-unit>
 			<trans-unit id="message.success.successfully_contacted">
-				<source> Thanks you for your response. We will get back to you as soon as possible.</source>
+				<target>Vielen Dank für Ihre Antwort. Wir werden so schnell wie möglich auf Sie zurückkommen.</target>
 			</trans-unit>
 			<trans-unit id="message.info.mail_not_sent">
-				<source>Thanks you for your response. %1$s Unfortunately your mail is not sent, Don't worry we will get back to you as soon as possible.</source>
+				<target>Vielen Dank für Ihre Antwort. %1$s Leider konnte Ihre E-Mail nicht versendet werden, keine Sorge, wir zurück zu Ihnen so schnell wie möglich zu bekommen.</target>
 			</trans-unit>
 		</body>
 	</file>

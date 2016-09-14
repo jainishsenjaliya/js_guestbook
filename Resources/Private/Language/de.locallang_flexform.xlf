@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file target-language="de" datatype="plaintext" original="messages" date="2016-05-31T19:11:09Z" product-name="js_guestbook">
+		<header/>
+		<body>
+						
+			<trans-unit id="main">
+				<target>Allgemeine Einstellungen</target>
+			</trans-unit>
+
+			<trans-unit id="main.displayMode">
+				<target>Anzeigemodus</target>
+			</trans-unit>
+			<trans-unit id="main.displayMode.guestBook">
+				<target>Gästebuch Liste</target>
+			</trans-unit>
+			<trans-unit id="main.displayMode.form">
+				<target>Gästebuch Dateneingabeformular</target>
+			</trans-unit>
+
+			<trans-unit id="main.storagePID">
+				<target>Wo sollen die Benutzerkontakte gespeichert werden [ leeres Feld = ausgewählte Seite ]</target>
+			</trans-unit>
+
+			<trans-unit id="main.startingPoint">
+				<target>Ausgangspunkt</target>
+			</trans-unit>
+
+
+			<trans-unit id="fields">
+				<target>Formularfelder</target>
+			</trans-unit>
+			<trans-unit id="fields.form">
+				<target>Ausgewählte Felder werden auf der Frontend- Seite angezeigt.</target>
+			</trans-unit>
+			<trans-unit id="fields.required">
+				<target>Pflichtfelder</target>
+			</trans-unit>
+
+			<trans-unit id="additional">
+				<target>Andere Einstellungen</target>
+			</trans-unit>
+			<trans-unit id="additional.javascript.jQueryLib.include">
+				<target>jQuery Bibliothek einfügen</target>
+			</trans-unit>
+			<trans-unit id="additional.javascript.jQueryLib.includeInFooter">
+				<target>jQuery Bibliothek im Footer einfügen</target>
+			</trans-unit>
+			<trans-unit id="additional.javascript.validation.include">
+				<target>jQuery Validierung</target>
+			</trans-unit>
+			<trans-unit id="additional.javascript.validation.includeInFooter">
+				<target>jQuery Validierung in Footer</target>
+			</trans-unit>
+			<trans-unit id="additional.css.fancy.include">
+				<target>Fancy CSS einfügen</target>
+			</trans-unit>
+			<trans-unit id="additional.css.responsive.include">
+				<target>Mobiles kompatibles Layout</target>
+			</trans-unit>
+			<trans-unit id="additional.css.includeInFooter">
+				<target>Style in Footer einfügen</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>
