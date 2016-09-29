@@ -12,7 +12,7 @@
 
 $EM_CONF[$_EXTKEY] = array(
 	'title' => 'Guest Book',
-	'description' => 'Simple and smart Guestbook with name, email, phone, www, title, message. Everything will be manage through typoscript',
+	'description' => 'Simple and smart Guest book ( Guestbook ) with name, email, phone, www, title, message. Everything will be manage through typoscript as well as plugin option',
 	'category' => 'plugin',
 	'author' => 'Jainish Senjaliya',
 	'author_email' => 'jainishsenjaliya@gmail.com',
@@ -22,7 +22,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'uploadfolder' => '0',
 	'createDirs' => '',
 	'clearCacheOnLoad' => 0,
-	'version' => '1.0.15',
+	'version' => '1.0.16',
 	'constraints' => array(
 		'depends' => array(
 			'typo3' => '6.0.0 - 7.6.99',

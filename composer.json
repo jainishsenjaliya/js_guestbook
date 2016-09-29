@@ -1,0 +1,14 @@
+{
+  "name": "Jainish Senjaliya/js_guestbook",
+  "description": "Simple and smart Guestbook with name, email, phone, www, title, message. Everything will be manage through typoscript.",
+  "type": "typo3-cms-extension",
+  "keywords": ["TYPO3 CMS", "Guestbook, Guest book"],
+  "homepage": "https://github.com/jainishsenjaliya/js_guestbook",
+  "version": "1.0.16",
+  "support": {
+    "issues": "https://github.com/jainishsenjaliya/js_guestbook/issues"
+  },
+  "require": {
+      "typo3/cms": "6.0.0 - 8.9.99"
+  }
+}
