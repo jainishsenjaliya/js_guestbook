@@ -18,6 +18,10 @@
 				<target>Gästebuch Dateneingabeformular</target>
 			</trans-unit>
 
+			<trans-unit id="main.display.email">
+				<target>E-Mail in der Liste der Gästebuch-Listen anzeigen</target>
+			</trans-unit>
+
 			<trans-unit id="main.storagePID">
 				<target>Wo sollen die Benutzerkontakte gespeichert werden [ leeres Feld = ausgewählte Seite ]</target>
 			</trans-unit>

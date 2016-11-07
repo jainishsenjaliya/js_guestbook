@@ -11,9 +11,11 @@
 			</div>
 			<f:if condition="{0: guest.email, 1: guest.www}!={0: '', 1: ''}">
 				<div class="contact">
-					<f:if condition="{guest.email}">
-						<f:link.email email="{guest.email}">{guest.email}</f:link.email>
-						<f:if condition="{guest.www}"><br/></f:if>
+					<f:if condition="{settings.main.display.email}">
+						<f:if condition="{guest.email}">
+							<f:link.email email="{guest.email}">{guest.email}</f:link.email>
+							<f:if condition="{guest.www}"><br/></f:if>
+						</f:if>
 					</f:if>
 					<f:if condition="{guest.www}">
 						<f:link.external uri="{guest.www}" target="_blank" rel="nofollow">{guest.www}</f:link.external>

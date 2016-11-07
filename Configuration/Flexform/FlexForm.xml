@@ -32,6 +32,15 @@
 							</config>
 						</TCEforms>
 					</settings.main.displayMode>
+					<settings.main.display.email>
+						<TCEforms>
+							<label>LLL:EXT:js_guestbook/Resources/Private/Language/locallang_flexform.xlf:main.display.email</label>
+							<config>
+								<type>check</type>
+								<default>1</default>
+							</config>
+						</TCEforms>
+					</settings.main.display.email>
 					<settings.main.storagePID>
 						<TCEforms>
 							<label>LLL:EXT:js_guestbook/Resources/Private/Language/locallang_flexform.xlf:main.storagePID</label>

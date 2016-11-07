@@ -2,6 +2,13 @@ plugin.tx_jsguestbook{
 
 	settings{
 
+		main{
+			display{
+				# cat=jsguestbook_user/enable/001; type=boolean; label= Display Email: Display Email in Guestbook list page
+				email = 1
+			}
+		}
+
 		fields{
 
 			# cat=jsguestbook_fields/enable/0010; type=text; label= Form fields : Selected fields will be reflected in frontend side. [i.e : first_name, last_name, title, email, phone, www, message]. Place fields name with comma separated

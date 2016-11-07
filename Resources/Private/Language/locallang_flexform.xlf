@@ -18,6 +18,10 @@
 				<source>Guestbook Data entry form</source>
 			</trans-unit>
 
+			<trans-unit id="main.display.email">
+				<source>Display Email in Guestbook list page</source>
+			</trans-unit>
+
 			<trans-unit id="main.storagePID">
 				<source>Where to save user contact [ Empty = Same page ]</source>
 			</trans-unit>

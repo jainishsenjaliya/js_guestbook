@@ -220,7 +220,7 @@
             "sourceLanguage": "en",
             "state": "stable",
             "targetVersion": "7.6.0-7.6.99",
-            "version": "1.0.4"
+            "version": "2.0.0"
         },
         "extensionKey": "js_guestbook",
         "name": "Guest Book",

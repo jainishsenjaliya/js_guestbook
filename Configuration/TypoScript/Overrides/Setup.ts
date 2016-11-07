@@ -2,6 +2,12 @@ plugin.tx_jsguestbook{
 
 	settings{
 
+		main{
+			display{
+				email = {$plugin.tx_jsguestbook.settings.main.display.email}
+			}
+		}
+
 		fields{
 			form 				= {$plugin.tx_jsguestbook.settings.fields.form}
 			required			= {$plugin.tx_jsguestbook.settings.fields.required}
