@@ -1,5 +1,5 @@
 {
-  "name": "Jainish Senjaliya/js_guestbook",
+  "name": "jainishsenjaliya/js-guestbook",
   "description": "Simple and smart Guestbook with name, email, phone, www, title, message. Everything will be manage through typoscript.",
   "type": "typo3-cms-extension",
   "keywords": ["TYPO3 CMS", "Guestbook, Guest book"],
