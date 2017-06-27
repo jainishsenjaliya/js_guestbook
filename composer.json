@@ -4,11 +4,15 @@
   "type": "typo3-cms-extension",
   "keywords": ["TYPO3 CMS", "Guestbook, Guest book"],
   "homepage": "https://github.com/jainishsenjaliya/js_guestbook",
-  "version": "1.0.16",
   "support": {
     "issues": "https://github.com/jainishsenjaliya/js_guestbook/issues"
   },
   "require": {
-      "typo3/cms": "6.0.0 - 8.9.99"
+      "typo3/cms": "6.0.0 - 8.7.99"
+  },
+  "autoload": {
+    "psr-4": {
+      "JS\\JsGuestbook\\": "Classes/"
+    }
   }
 }
